@@ -1,15 +1,14 @@
 language: python
 # python versions to use during the tests
 python:
-    - "2.7"
-    - "3.4"
+    - "3.6"
 # command to install dependencies
 install:
     - pip install -r test_requirements.txt
     - pip install .
 # command to run tests
 script:
-    - py.test --cov-report term-missing --cov=./distances
+    - pytest --cov-report term-missing --cov=./
 #    - py.test
 branches:
   only:
