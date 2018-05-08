@@ -1,9 +1,9 @@
 from distances import euclidean
-from utils import test_cases
+from utils import create_cases
 
 def test_answer():
     errors = []
-    a,b = test_cases()
+    a,b = create_cases()
     for distance_name, distance in [("euclidean", euclidean)]:
        # replace assertions by conditions
         if distance(a,b) != distance(b,a):

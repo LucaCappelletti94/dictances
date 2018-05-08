@@ -8,6 +8,6 @@ install:
     - pip install .
 # command to run tests
 script:
-    - pytest --cov-report term-missing --cov=./distances
+    - pytest --cov-report term-missing --cov=distances
 after_success:
     - coveralls
