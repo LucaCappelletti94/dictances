@@ -24,7 +24,7 @@ def find_version(*file_paths):
         return version_match.group(1)
     raise RuntimeError("Unable to find version string.")
 
-__version__ = find_version("zipf", "__version__.py")
+__version__ = find_version("distances", "__version__.py")
 
 setup(
     name='distances',
