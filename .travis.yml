@@ -4,10 +4,12 @@ python:
   - "3.6"
 cache: pip
 install:
-  - pip install codecov pytest pytest-cov
+  - pip install codecov python-coveralls
+ pytest pytest-cov
   - pip install .
 script:
   - pytest --cov=./
 
 after_success:
   - bash < (curl -s https://codecov.io/bash)
+  - coveralls
