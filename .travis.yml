@@ -1,19 +1,18 @@
-sudo: false
 language: python
+# python versions to use during the tests
 python:
-  - "3.6"
-cache: pip
+    - "2.7"
+    - "3.4"
+# command to install dependencies
 install:
-  - pip install -e . --use-mirrors
-before_script:
-  - pip install -r test_requirements.txt --use-mirrors
-  - git clone https://github.com/LucaCappelletti94/distances.git
-  - cd distances
-  - git checkout -qf 17b8119796516195527dcb4f454a2ebd41d60244
-  - py.test ./test --cov=distances
-  - cd -
+    - pip install -r test_requirements.txt
+    - pip install .
+# command to run tests
 script:
-  - pytest --cov=./distances --doctest-modules --pep8 coveralls -v --cov coveralls --cov-report term-missing
-
+    - py.test --cov-report term-missing --cov=./distances
+#    - py.test
+branches:
+  only:
+   - master
 after_success:
-  - coveralls
+    - coveralls
