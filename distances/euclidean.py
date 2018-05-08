@@ -1,5 +1,4 @@
 import math
-from .distances_utils import sort
 
 def euclidean(a:dict, b:dict)->float:
     total = 0
