@@ -4,12 +4,16 @@ python:
   - "3.6"
 cache: pip
 install:
-  - pip install codecov python-coveralls
- pytest pytest-cov
-  - pip install .
+  - pip install -e . --use-mirrors
+before_script:
+  - pip install -r test_requirements.txt --use-mirrors
+  - git clone https://github.com/LucaCappelletti94/distances.git
+  - cd distances
+  - git checkout -qf 17b8119796516195527dcb4f454a2ebd41d60244
+  - py.test ./test --cov=distances
+  - cd -
 script:
-  - pytest --cov=./
+  - pytest --cov=./distances --doctest-modules --pep8 coveralls -v --cov coveralls --cov-report term-missing
 
 after_success:
-  - bash < (curl -s https://codecov.io/bash)
   - coveralls
