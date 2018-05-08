@@ -1,7 +1,7 @@
 Distances
 ==========
 
-|travis| |codecov|
+|travis| |codecov| |coveralls|
 
 Distances and divergences between distributions implemented in the best way I found in python.
 
@@ -10,3 +10,6 @@ Distances and divergences between distributions implemented in the best way I fo
 
 .. |codecov| image:: https://codecov.io/gh/LucaCappelletti94/distances/branch/master/graph/badge.svg
   :target: https://codecov.io/gh/LucaCappelletti94/distances
+
+.. |coveralls| image:: https://coveralls.io/repos/github/LucaCappelletti94/distances/badge.svg?branch=master
+    :target: https://coveralls.io/github/LucaCappelletti94/distances?branch=master
