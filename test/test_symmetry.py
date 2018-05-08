@@ -1,5 +1,5 @@
 from distances import euclidean
-from .utils import test_cases
+from utils import test_cases
 
 def test_answer():
     errors = []
