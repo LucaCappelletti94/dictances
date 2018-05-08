@@ -1,13 +1,13 @@
 from distances import euclidean
-from .test_utils import test_cases
+from .utils import test_case
 
 def test_answer():
     errors = []
-    a,b = test_cases()
+    a = test_case()
     for distance_name, distance in [("euclidean", euclidean)]:
        # replace assertions by conditions
-        if distance(a,b) != distance(b,a):
-            errors.append("Metric '%s' is not symmetric"%distance_name)
+        if distance(a,a) != 0:
+            errors.append("Metric '%s' is not null on same point"%distance_name)
 
     # assert no error message has been registered, else print messages
     assert not errors, "errors occured:\n{}".format("\n".join(errors))

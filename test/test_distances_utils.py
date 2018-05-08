@@ -1,5 +1,5 @@
 from distances.distances_utils import sort
-from .test_utils import test_case
+from .utils import test_case
 
 def test_answer():
     a = test_case(n=10)
