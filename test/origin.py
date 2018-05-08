@@ -1,7 +1,7 @@
 from distances import euclidean
-from .test_utils import test_cases
+from .test_utils import test_case
 
-def test_origin():
+def test_answer():
     errors = []
     a = test_case()
     for distance_name, distance in [("euclidean", euclidean)]:

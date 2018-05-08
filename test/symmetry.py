@@ -1,7 +1,7 @@
 from distances import euclidean
 from .test_utils import test_cases
 
-def test_symmetry():
+def test_answer():
     errors = []
     a,b = test_cases()
     for distance_name, distance in [("euclidean", euclidean)]:
