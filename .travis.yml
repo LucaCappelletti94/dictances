@@ -1,13 +1,13 @@
 dist: trusty
 sudo: required
-language: python
-python:
-- '3.6'
 addons:
   sonarcloud:
     organization: lucacappelletti94-github
     token:
       secure: uDs/V8FvFmZ+GvuFn24sWXFRa6hE85s0R3i6R7304v3bASYO6jQgu55bh+hvCGKEqWE6rM9GEcIU9xW1PZdoFH0qsO3npuAuIWAxeZmz8WTeXXYFkrcN4BvZf7mCPbIw1pBACOBeLLtBGfsMhYkxNHugPkz+Xv+uBFlkJ34fjjtRx+3JgAmBBcymPu8gzvoXEsa9Righ6DU0szZvPo0gEwulL8gaOA0gaRuIpfHrM3YD65b/k3FcLavnI6TYxJ6Ocspv3F/zDV5FE/tW2IuVUARhaEAnWmiOel6Q9/TNGZ4QgB2TeXt9hi8hMlGhwldQXcHpDTHUkeS0Hj7xRXM5WpKn7PyCXQSqUlnRluxpJ6SztCWyuhP46uy5U3bY6EUQUM5iLtzOf+w7dvAdivIqdy4/SdY9Yhf37drwGdi1n2Z85I9FlEvJZhpXzmrsh1IDYHraHuBMFH6xzCasmVQ6cIZ8pVU3eSlJCuxMHfzjzEa5vUfFidrajgFwyFg3YVAoa687F7g0TLESm/5Q4Ay2aJgGLrLPvi9vzn+tFZfTlYOS8mencSYHCZTsVCxMwMy0iEDLlL5dkB+BvDjqXIKyWzqcUOcInNdWD/8K8D6h0PxNFjbGHBe4Q1QvwER++Ey2NAHeHj/os2f22tF+V02wRgUsA5NRojZqSKOfyZblj0I=
+language: python
+python:
+- '3.6'
 jdk:
 - oraclejdk8
 cache:
