@@ -5,13 +5,13 @@ Distances
 
 Distances and divergences between distributions implemented in python.
 
-+-----------------------------+----------------+-----------------------------+
-| Metric name                 | Function name  | Average time on same sample |
-+=============================+================+=============================+
-| `Euclidean distance`_       | euclidean      | 50.1 µs ± 2.26 µs           |
-+---------------------------+----------------+-------------------------------+
-| `Jensen-Shannon divergence`_| jensen_shannon | 20.8 µs ± 1.36 µs           |
-+---------------------------+----------------+-------------------------------+
++------------------------------+----------------+-----------------------------+
+| Metric name                  | Function name  | Average time on same sample |
++==============================+================+=============================+
+| `Euclidean distance`_        | euclidean      | 50.1 µs ± 2.26 µs           |
++------------------------------+----------------+-----------------------------+
+| `Jensen-Shannon divergence`_ | jensen_shannon | 20.8 µs ± 1.36 µs           |
++------------------------------+----------------+-----------------------------+
 
 .. |travis| image:: https://travis-ci.org/LucaCappelletti94/distances.png
    :target: https://travis-ci.org/LucaCappelletti94/distances
