@@ -1,7 +1,7 @@
 Distances
 ==========
 
-|travis| |coveralls|
+|travis| |coveralls| |sonar|
 
 Distances and divergences between distributions implemented in python.
 
@@ -9,4 +9,6 @@ Distances and divergences between distributions implemented in python.
    :target: https://travis-ci.org/LucaCappelletti94/distances
 
 .. |coveralls| image:: https://coveralls.io/repos/github/LucaCappelletti94/distances/badge.svg?branch=master
-    :target: https://coveralls.io/github/LucaCappelletti94/distances?branch=master
+
+.. |sonar| image:: https://sonarcloud.io/api/project_badges/measure?project=distances.lucacappelletti&metric=alert_status
+    :target: https://sonarcloud.io/dashboard/index/distances.lucacappelletti
