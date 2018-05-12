@@ -27,4 +27,4 @@ def jensen_shannon(a:dict, b:dict):
             delta += value
 
     total += (1+delta)*log(2)
-    return total/2
+    return round(total/2,14)
