@@ -10,4 +10,4 @@ def euclidean(a:dict, b:dict)->float:
     for k in b:
         if k not in a:
             total += bget(k)**2
-    return math.sqrt(total)
+    return round(math.sqrt(total),14)
