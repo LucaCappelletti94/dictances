@@ -1,4 +1,5 @@
-from distances_utils import sort
+from .distances_utils import sort
+import math
 def jensen_shannon(a:dict, b:dict):
     """
         Determines the Jensen–Shannon divergence.
@@ -16,7 +17,7 @@ def jensen_shannon(a:dict, b:dict):
     big_get = big.get
     log = math.log
 
-    for key, value in small_data.items():
+    for key, value in small.items():
         ov = big_get(key)
         if ov:
             denominator = (ov + value)/2
