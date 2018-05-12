@@ -5,13 +5,13 @@ Distances
 
 Distances and divergences between distributions implemented in python.
 
-+---------------------------+----------------+-----------------------------+
-| Metric name               | Function name  | Average time on same sample |
-+===========================+================+=============================+
-| Euclidean distance        | euclidean      | 50.1 µs ± 2.26 µs           |
-+---------------------------+----------------+-----------------------------+
-| Jensen-Shannon divergence | jensen_shannon | 20.8 µs ± 1.36 µs           |
-+---------------------------+----------------+-----------------------------+
++-----------------------------+----------------+-----------------------------+
+| Metric name                 | Function name  | Average time on same sample |
++=============================+================+=============================+
+| `Euclidean distance`_       | euclidean      | 50.1 µs ± 2.26 µs           |
++---------------------------+----------------+-------------------------------+
+| `Jensen-Shannon divergence`_| jensen_shannon | 20.8 µs ± 1.36 µs           |
++---------------------------+----------------+-------------------------------+
 
 .. |travis| image:: https://travis-ci.org/LucaCappelletti94/distances.png
    :target: https://travis-ci.org/LucaCappelletti94/distances
@@ -29,3 +29,6 @@ Distances and divergences between distributions implemented in python.
 
 .. |sonar_maintainability| image:: https://sonarcloud.io/api/project_badges/measure?project=distances.lucacappelletti&metric=sqale_rating
     :target: https://sonarcloud.io/dashboard/index/distances.lucacappelletti
+
+.. _Euclidean distance link:: https://en.wikipedia.org/wiki/Euclidean_distance
+.. _Jensen-Shannon divergence link::https://en.wikipedia.org/wiki/Jensen%E2%80%93Shannon_divergence
