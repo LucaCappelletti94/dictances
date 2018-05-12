@@ -30,5 +30,5 @@ Distances and divergences between distributions implemented in python.
 .. |sonar_maintainability| image:: https://sonarcloud.io/api/project_badges/measure?project=distances.lucacappelletti&metric=sqale_rating
     :target: https://sonarcloud.io/dashboard/index/distances.lucacappelletti
 
-.. _Euclidean distance link:: https://en.wikipedia.org/wiki/Euclidean_distance
-.. _Jensen-Shannon divergence link::https://en.wikipedia.org/wiki/Jensen%E2%80%93Shannon_divergence
+.. _Euclidean distance: https://en.wikipedia.org/wiki/Euclidean_distance
+.. _Jensen Shannon divergence: https://en.wikipedia.org/wiki/Jensen%E2%80%93Shannon_divergence
