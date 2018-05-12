@@ -1,6 +1,7 @@
 import math
 
 def euclidean(a:dict, b:dict)->float:
+    """Returns the euclideam distance beetween a and b"""
     total = 0
     aget = a.get
     bget = b.get
