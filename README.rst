@@ -7,7 +7,7 @@ Distances and divergences between distributions implemented in python.
 
 +---------------------------+----------------+-----------------------------+
 | Metric name               | Function name  | Average time on same sample |
-+---------------------------+----------------+-----------------------------+
++===========================+================+=============================+
 | Euclidean distance        | euclidean      | 50.1 µs ± 2.26 µs           |
 +---------------------------+----------------+-----------------------------+
 | Jensen-Shannon divergence | jensen_shannon | 20.8 µs ± 1.36 µs           |
