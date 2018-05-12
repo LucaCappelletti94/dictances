@@ -1,7 +1,7 @@
 Distances
 ==========
 
-|travis||coveralls||sonar_quality||sonar_bugs||sonar_lines||sonar_maintainability|
+|travis| |coveralls| |sonar_quality| |sonar_bugs| |sonar_lines| |sonar_maintainability|
 
 Distances and divergences between distributions implemented in python.
 
