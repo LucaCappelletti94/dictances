@@ -1,4 +1,4 @@
-from distances import euclidean
+from distances import euclidean, jensen_shannon
 from utils import create_cases
 
 def test_symmetry():
