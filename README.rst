@@ -12,7 +12,7 @@ In the complexity notations, `n` is `len(a)` and `m` is `len(b)`.
 +==============================+===============================+=============================+======================================+
 | `Euclidean distance`_        | `euclidean`_                  | 50.1 µs ± 2.26 µs           | |Onm|                                |
 +------------------------------+-------------------------------+-----------------------------+--------------------------------------+
-| `Jensen Shannon divergence`_ | `jensen_shannon`_             | 20.8 µs ± 1.36 µs           | O(min(n,m))                          |
+| `Jensen Shannon divergence`_ | `jensen_shannon`_             | 20.8 µs ± 1.36 µs           | |Omin|                               |
 +------------------------------+-------------------------------+-----------------------------+--------------------------------------+
 
 .. |travis| image:: https://travis-ci.org/LucaCappelletti94/distances.png
@@ -38,3 +38,4 @@ In the complexity notations, `n` is `len(a)` and `m` is `len(b)`.
 .. _jensen_shannon: https://github.com/LucaCappelletti94/distances/blob/master/examples/jensen_shannon.py
 
 .. |Onm| image:: https://github.com/LucaCappelletti94/distances/blob/master/images/Onm.gif?raw=true
+.. |Omin| image:: https://github.com/LucaCappelletti94/distances/blob/master/images/Omin.gif?raw=true
