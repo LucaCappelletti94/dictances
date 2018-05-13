@@ -5,20 +5,15 @@ Distances
 
 Distances and divergences between distributions implemented in python.
 
-With |a| or |b| I mean the length of the dictionary a and b respectively.
+In the complexity notations, `n` is `len(a)` and `m` is `len(b)`.
 
-+------------------------------+----------------+-----------------------------+-------------------+
-| Metric name                  | Function name  | Average time on same sample | Complexity        |
-+==============================+================+=============================+===================+
-| `Euclidean distance`_        | euclidean(a,b) | 50.1 µs ± 2.26 µs           | O(|a||b|)         |
-+------------------------------+----------------+-----------------------------+-------------------+
-| `Jensen Shannon divergence`_ | jensen_shannon | 20.8 µs ± 1.36 µs           | O(min(|a|, |b|))  |
-+------------------------------+----------------+-----------------------------+-------------------+
-
-.. literalinclude:: examples/euclidean.py
-   :language: python
-   :emphasize-lines: 9-12
-   :linenos:
++------------------------------+-------------------------------+-----------------------------+-------------------+
+| Metric name                  | Function name                 | Average time on same sample | Complexity        |
++==============================+===============================+=============================+===================+
+| `Euclidean distance`_        | `euclidean`_.                 | 50.1 µs ± 2.26 µs           | O(nm)             |
++------------------------------+-------------------------------+-----------------------------+-------------------+
+| `Jensen Shannon divergence`_ | `jensen_shannon`_.            | 20.8 µs ± 1.36 µs           | O(min(n,m))       |
++------------------------------+-------------------------------+-----------------------------+-------------------+
 
 .. |travis| image:: https://travis-ci.org/LucaCappelletti94/distances.png
    :target: https://travis-ci.org/LucaCappelletti94/distances
@@ -39,3 +34,5 @@ With |a| or |b| I mean the length of the dictionary a and b respectively.
 
 .. _Euclidean distance: https://en.wikipedia.org/wiki/Euclidean_distance
 .. _Jensen Shannon divergence: https://en.wikipedia.org/wiki/Jensen%E2%80%93Shannon_divergence
+.. _euclidean: https://github.com/LucaCappelletti94/distances/blob/master/examples/euclidean.py
+.. _jensen_shannon: https://github.com/LucaCappelletti94/distances/blob/master/examples/jensen_shannon.py
