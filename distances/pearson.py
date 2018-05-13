@@ -29,4 +29,4 @@ def pearson(a:dict, b:dict)->float:
     a_mean = a_sum/len_a
     b_mean = b_sum/len_b
 
-    return (ab - n_mul*a_mean*b_mean) / (sqrt(a_sum2 - len_a*a_mean**2)*sqrt(b_sum2 - len_b*b_mean**2))
+    return round((ab - n_mul*a_mean*b_mean) / (sqrt(a_sum2 - len_a*a_mean**2)*sqrt(b_sum2 - len_b*b_mean**2)),14)
