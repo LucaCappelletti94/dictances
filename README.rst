@@ -21,6 +21,8 @@ In the complexity notations, :py:`n` is :py:`len(a)` and :py:`m` is :py:`len(b)`
 +------------------------------+-------------------------------+-----------------------------+--------------------------------------+
 | `Bhattacharyya distance`_    | `bhattacharyya`_              | 14.4 µs ± 180 ns            | |Omin|                               |
 +------------------------------+-------------------------------+-----------------------------+--------------------------------------+
+| `Hellinger distance`_        | `hellinger`_                  | 16.8 µs ± 372 ns            | |Omin|                               |
++------------------------------+-------------------------------+-----------------------------+--------------------------------------+
 
 .. |travis| image:: https://travis-ci.org/LucaCappelletti94/distances.png
    :target: https://travis-ci.org/LucaCappelletti94/distances
@@ -44,11 +46,13 @@ In the complexity notations, :py:`n` is :py:`len(a)` and :py:`m` is :py:`len(b)`
 .. _Jensen Shannon divergence: https://en.wikipedia.org/wiki/Jensen%E2%80%93Shannon_divergence
 .. _Bhattacharyya distance: https://en.wikipedia.org/wiki/Bhattacharyya_distance
 .. _Total variation: https://en.wikipedia.org/wiki/Total_variation
+.. _Hellinger distance: https://en.wikipedia.org/wiki/Hellinger_distance
 
 .. _euclidean: https://github.com/LucaCappelletti94/distances/blob/master/examples/euclidean.py
 .. _jensen_shannon: https://github.com/LucaCappelletti94/distances/blob/master/examples/jensen_shannon.py
 .. _bhattacharyya: https://github.com/LucaCappelletti94/distances/blob/master/examples/bhattacharyya.py
 .. _total_variation: https://github.com/LucaCappelletti94/distances/blob/master/examples/total_variation.py
+.. _hellinger: https://github.com/LucaCappelletti94/distances/blob/master/examples/hellinger.py
 
 .. |On+m| image:: https://github.com/LucaCappelletti94/distances/blob/master/images/On+m.gif?raw=true
 .. |Omin| image:: https://github.com/LucaCappelletti94/distances/blob/master/images/Omin.gif?raw=true
