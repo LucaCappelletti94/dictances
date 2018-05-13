@@ -10,9 +10,9 @@ In the complexity notations, `n` is `len(a)` and `m` is `len(b)`.
 +------------------------------+-------------------------------+-----------------------------+-------------------+
 | Metric name                  | Function name                 | Average time on same sample | Complexity        |
 +==============================+===============================+=============================+===================+
-| `Euclidean distance`_        | `euclidean`_.                 | 50.1 µs ± 2.26 µs           | O(nm)             |
+| `Euclidean distance`_        | `euclidean`_                  | 50.1 µs ± 2.26 µs           | O(nm)             |
 +------------------------------+-------------------------------+-----------------------------+-------------------+
-| `Jensen Shannon divergence`_ | `jensen_shannon`_.            | 20.8 µs ± 1.36 µs           | O(min(n,m))       |
+| `Jensen Shannon divergence`_ | `jensen_shannon`_             | 20.8 µs ± 1.36 µs           | O(min(n,m))       |
 +------------------------------+-------------------------------+-----------------------------+-------------------+
 
 .. |travis| image:: https://travis-ci.org/LucaCappelletti94/distances.png
