@@ -4,7 +4,7 @@ from utils import create_case
 def test_origin():
     errors = []
     a = create_case()
-    for distance_name, distance in [("euclidean", euclidean), ("jensen_shannon", jensen_shannon), ("bhattacharyya", bhattacharyya)]:
+    for distance_name, distance in [("euclidean", euclidean), ("jensen_shannon", jensen_shannon), ("bhattacharyya", bhattacharyya), ("total_variation", total_variation)]:
        # replace assertions by conditions
         if distance(a,a) != 0:
             errors.append("Metric '%s' is not null on same point"%distance_name)
