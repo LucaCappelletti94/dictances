@@ -7,13 +7,13 @@ Distances and divergences between distributions implemented in python.
 
 In the complexity notations, `n` is `len(a)` and `m` is `len(b)`.
 
-+------------------------------+-------------------------------+-----------------------------+-------------------+
-| Metric name                  | Function name                 | Average time on same sample | Complexity        |
-+==============================+===============================+=============================+===================+
-| `Euclidean distance`_        | `euclidean`_                  | 50.1 µs ± 2.26 µs           | O(nm)             |
-+------------------------------+-------------------------------+-----------------------------+-------------------+
-| `Jensen Shannon divergence`_ | `jensen_shannon`_             | 20.8 µs ± 1.36 µs           | O(min(n,m))       |
-+------------------------------+-------------------------------+-----------------------------+-------------------+
++------------------------------+-------------------------------+-----------------------------+--------------------------------------+
+| Metric name                  | Function name                 | Average time on same sample | Complexity                           |
++==============================+===============================+=============================+======================================+
+| `Euclidean distance`_        | `euclidean`_                  | 50.1 µs ± 2.26 µs           | |Onm|                                |
++------------------------------+-------------------------------+-----------------------------+--------------------------------------+
+| `Jensen Shannon divergence`_ | `jensen_shannon`_             | 20.8 µs ± 1.36 µs           | O(min(n,m))                          |
++------------------------------+-------------------------------+-----------------------------+--------------------------------------+
 
 .. |travis| image:: https://travis-ci.org/LucaCappelletti94/distances.png
    :target: https://travis-ci.org/LucaCappelletti94/distances
@@ -36,3 +36,5 @@ In the complexity notations, `n` is `len(a)` and `m` is `len(b)`.
 .. _Jensen Shannon divergence: https://en.wikipedia.org/wiki/Jensen%E2%80%93Shannon_divergence
 .. _euclidean: https://github.com/LucaCappelletti94/distances/blob/master/examples/euclidean.py
 .. _jensen_shannon: https://github.com/LucaCappelletti94/distances/blob/master/examples/jensen_shannon.py
+
+.. |Onm| image:: https://github.com/LucaCappelletti94/distances/blob/master/images/Onm.gif?raw=true
