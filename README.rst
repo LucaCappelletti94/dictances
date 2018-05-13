@@ -19,6 +19,7 @@ In the complexity notations, :py:`n` is :py:`len(a)` and :py:`m` is :py:`len(b)`
    :target: https://travis-ci.org/LucaCappelletti94/distances
 
 .. |coveralls| image:: https://coveralls.io/repos/github/LucaCappelletti94/distances/badge.svg?branch=master
+    :target: https://coveralls.io/github/LucaCappelletti94/distances
 
 .. |sonar_quality| image:: https://sonarcloud.io/api/project_badges/measure?project=distances.lucacappelletti&metric=alert_status
     :target: https://sonarcloud.io/dashboard/index/distances.lucacappelletti
