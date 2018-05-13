@@ -5,7 +5,7 @@ Distances
 
 Distances and divergences between distributions implemented in python.
 
-In the complexity notations, `n` is `len(a)` and `m` is `len(b)`.
+In the complexity notations, :py:`n` is :py:`len(a)` and :py:`m` is :py:`len(b)`.
 
 +------------------------------+-------------------------------+-----------------------------+--------------------------------------+
 | Metric name                  | Function name                 | Average time on same sample | Complexity                           |
@@ -39,3 +39,6 @@ In the complexity notations, `n` is `len(a)` and `m` is `len(b)`.
 
 .. |Onm| image:: https://github.com/LucaCappelletti94/distances/blob/master/images/Onm.gif?raw=true
 .. |Omin| image:: https://github.com/LucaCappelletti94/distances/blob/master/images/Omin.gif?raw=true
+
+.. role:: py(code)
+   :language: python
