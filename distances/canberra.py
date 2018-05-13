@@ -6,7 +6,10 @@ def canberra(a:dict, b:dict)->float:
     for k in a:
         aval = aget(k)
         bval = bget(k)
-        total += abs(aval-bval)/(aval+bval)
+        if bval:
+            total += abs(aval-bval)/(aval+bval)
+        else:
+            total += 1
     for k in b:
         if k not in a:
             total += 1
