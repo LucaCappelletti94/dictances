@@ -1,7 +1,7 @@
 from .distances_utils import sort
 from math import sqrt
 def hellinger(a:dict, b:dict) -> float:
-    """Determines the hellinger distance"""
+    """Determines the Hellinger distance"""
     total = 0
     big, small = sort(a,b)
     big_get = big.get

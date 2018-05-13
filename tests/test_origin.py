@@ -1,10 +1,10 @@
-from distances import euclidean, jensen_shannon, bhattacharyya, total_variation, hellinger, kullback_leibler, squared_variation
+from distances import euclidean, jensen_shannon, bhattacharyya, total_variation, hellinger, kullback_leibler, squared_variation, canberra, chebyshev, cosine, hamming, MAE, manhattan, minkowsky, MSE, pearson
 from utils import create_case
 
 def test_origin():
     errors = []
     a = create_case()
-    for distance_name, distance in [("squared_variation", squared_variation),("euclidean", euclidean), ("jensen_shannon", jensen_shannon), ("bhattacharyya", bhattacharyya), ("total_variation", total_variation), ("hellinger", hellinger), ("kullback_leibler", kullback_leibler)]:
+    for distance_name, distance in [("squared_variation", squared_variation),("euclidean", euclidean), ("jensen_shannon", jensen_shannon), ("bhattacharyya", bhattacharyya), ("total_variation", total_variation), ("hellinger", hellinger), ("kullback_leibler", kullback_leibler), ("canberra", canberra), ("chebyshev", chebyshev), ("cosine", cosine), ("hamming", hamming), ("MAE", MAE), ("manhattan", manhattan), ("MSE", MSE), ("pearson", pearson)]:
        # replace assertions by conditions
         if distance(a,a) != 0:
             errors.append("Metric '%s' is not null on same point"%distance_name)

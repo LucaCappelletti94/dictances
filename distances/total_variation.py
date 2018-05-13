@@ -1,11 +1,3 @@
-def total_variation(a:dict, b:dict) -> float:
+def total_variation(a:dict, b:dict, overlap = False) -> float:
     """Determines the Total Variation distance"""
-    total = 0
-    aget = a.get
-    bget = b.get
-    for key in a:
-        total += abs(aget(key,0) - bget(key,0))
-    for key in b:
-        if key not in a:
-            total += bget(key,0)
-    return round(total,14)
+    return nth_variation(a,b,1,overlap)
