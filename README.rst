@@ -5,13 +5,15 @@ Distances
 
 Distances and divergences between distributions implemented in python.
 
-+------------------------------+----------------+-----------------------------+
-| Metric name                  | Function name  | Average time on same sample |
-+==============================+================+=============================+
-| `Euclidean distance`_        | euclidean      | 50.1 µs ± 2.26 µs           |
-+------------------------------+----------------+-----------------------------+
-| `Jensen Shannon divergence`_ | jensen_shannon | 20.8 µs ± 1.36 µs           |
-+------------------------------+----------------+-----------------------------+
+With |a| or |b| I mean the length of the dictionary a and b respectively.
+
++------------------------------+----------------+-----------------------------+-------------------+
+| Metric name                  | Function name  | Average time on same sample | Complexity        |
++==============================+================+=============================+===================+
+| `Euclidean distance`_        | euclidean(a,b) | 50.1 µs ± 2.26 µs           | O(|a||b|)         |
++------------------------------+----------------+-----------------------------+-------------------+
+| `Jensen Shannon divergence`_ | jensen_shannon | 20.8 µs ± 1.36 µs           | O(min(|a|, |b|))  |
++------------------------------+----------------+-----------------------------+-------------------+
 
 .. literalinclude:: examples/euclidean.py
    :language: python
