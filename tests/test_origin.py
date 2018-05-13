@@ -1,4 +1,4 @@
-from distances import euclidean, jensen_shannon, bhattacharyya
+from distances import euclidean, jensen_shannon, bhattacharyya, total_variation
 from utils import create_case
 
 def test_origin():
