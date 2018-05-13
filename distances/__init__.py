@@ -4,3 +4,4 @@ from .bhattacharyya import bhattacharyya
 from .total_variation import total_variation
 from .hellinger import hellinger
 from .kullback_leibler import kullback_leibler
+from .squared_variation import squared_variation
