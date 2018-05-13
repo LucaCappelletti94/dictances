@@ -14,4 +14,4 @@ def cosine(a:dict, b:dict)->float:
     for k, b_val in b.items():
         sqr_b += b_val**2
 
-    return round(prod_ab/(sqrt(sqr_a)*sqrt(sqr_b)),14)
+    return 1-round(prod_ab/(sqrt(sqr_a)*sqrt(sqr_b)),14)
