@@ -13,6 +13,11 @@ Distances and divergences between distributions implemented in python.
 | `Jensen Shannon divergence`_ | jensen_shannon | 20.8 µs ± 1.36 µs           |
 +------------------------------+----------------+-----------------------------+
 
+.. literalinclude:: examples/euclidean.py
+   :language: python
+   :emphasize-lines: 9-12
+   :linenos:
+
 .. |travis| image:: https://travis-ci.org/LucaCappelletti94/distances.png
    :target: https://travis-ci.org/LucaCappelletti94/distances
 
