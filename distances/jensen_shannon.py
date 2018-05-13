@@ -1,21 +1,13 @@
 from .distances_utils import sort
-import math
-def jensen_shannon(a:dict, b:dict):
-    """
-        Determines the Jensen–Shannon divergence.
+from math import log
 
-        Args:
-            other: the zipf to which determine the JS divergence.
-
-        Returns:
-            A float number representing the JS divergence
-    """
+def jensen_shannon(a:dict, b:dict)->float:
+    """Returns the jensen shannon divergence beetween a and b"""
     total = 0
     delta = 0
     big, small = sort(a,b)
 
     big_get = big.get
-    log = math.log
 
     for key, value in small.items():
         ov = big_get(key)

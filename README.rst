@@ -6,16 +6,18 @@ Distances
 
 |travis| |coveralls| |sonar_quality| |sonar_bugs| |sonar_lines| |sonar_maintainability|
 
-Distances and divergences between distributions implemented in python.
+Distances and divergences between discrete distributions implemented in python.
 
 In the complexity notations, :py:`n` is :py:`len(a)` and :py:`m` is :py:`len(b)`.
 
 +------------------------------+-------------------------------+-----------------------------+--------------------------------------+
 | Metric name                  | Function name                 | Average time on same sample | Complexity                           |
 +==============================+===============================+=============================+======================================+
-| `Euclidean distance`_        | `euclidean`_                  | 50.1 µs ± 2.26 µs           | |Onm|                                |
+| `Euclidean distance`_        | `euclidean`_                  | 49.2 µs ± 664 ns            | |On+m|                               |
 +------------------------------+-------------------------------+-----------------------------+--------------------------------------+
-| `Jensen Shannon divergence`_ | `jensen_shannon`_             | 20.8 µs ± 1.36 µs           | |Omin|                               |
+| `Jensen Shannon divergence`_ | `jensen_shannon`_             | 21.1 µs ± 442 ns            | |Omin|                               |
++------------------------------+-------------------------------+-----------------------------+--------------------------------------+
+| `Bhattacharyya distance`_    | `bhattacharyya`_              | 14.4 µs ± 180 ns            | |Omin|                               |
 +------------------------------+-------------------------------+-----------------------------+--------------------------------------+
 
 .. |travis| image:: https://travis-ci.org/LucaCappelletti94/distances.png
@@ -38,8 +40,10 @@ In the complexity notations, :py:`n` is :py:`len(a)` and :py:`m` is :py:`len(b)`
 
 .. _Euclidean distance: https://en.wikipedia.org/wiki/Euclidean_distance
 .. _Jensen Shannon divergence: https://en.wikipedia.org/wiki/Jensen%E2%80%93Shannon_divergence
+.. _Bhattacharyya distance: https://en.wikipedia.org/wiki/Bhattacharyya_distance
 .. _euclidean: https://github.com/LucaCappelletti94/distances/blob/master/examples/euclidean.py
 .. _jensen_shannon: https://github.com/LucaCappelletti94/distances/blob/master/examples/jensen_shannon.py
+.. _bhattacharyya: https://github.com/LucaCappelletti94/distances/blob/master/examples/bhattacharyya.py
 
-.. |Onm| image:: https://github.com/LucaCappelletti94/distances/blob/master/images/Onm.gif?raw=true
+.. |On+m| image:: https://github.com/LucaCappelletti94/distances/blob/master/images/On+m.gif?raw=true
 .. |Omin| image:: https://github.com/LucaCappelletti94/distances/blob/master/images/Omin.gif?raw=true
