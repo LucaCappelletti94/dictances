@@ -1,3 +1,6 @@
+.. role:: py(code)
+   :language: python
+
 Distances
 ==========
 
@@ -40,6 +43,3 @@ In the complexity notations, :py:`n` is :py:`len(a)` and :py:`m` is :py:`len(b)`
 
 .. |Onm| image:: https://github.com/LucaCappelletti94/distances/blob/master/images/Onm.gif?raw=true
 .. |Omin| image:: https://github.com/LucaCappelletti94/distances/blob/master/images/Omin.gif?raw=true
-
-.. role:: py(code)
-   :language: python
