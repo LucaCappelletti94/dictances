@@ -6,7 +6,7 @@ distances
 
 |travis| |coveralls| |sonar_quality| |sonar_maintainability|
 
-distances and divergences between discrete distributions implemented in python 3.6.
+Distances and divergences between discrete distributions implemented in python 3.6.
 
 For each metric, an example is present in `the folder examples`_.
 
