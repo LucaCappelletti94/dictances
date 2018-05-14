@@ -1,7 +1,7 @@
 .. role:: py(code)
    :language: python
 
-distances
+Dictances
 ==========
 
 |travis| |coveralls| |sonar_quality| |sonar_maintainability|
