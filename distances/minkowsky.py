@@ -1,5 +1,5 @@
 from .nth_variation import nth_variation
-def minkowsky(a:dict, b:dict, p:float)->float:
+def minkowsky(a:dict, b:dict, p=2)->float:
     if p == 0:
         raise ValueError("Parameter p must be non zero.")
     """Returns the euclideam distance beetween a and b"""

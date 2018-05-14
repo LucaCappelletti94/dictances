@@ -3,9 +3,13 @@ def chebyshev(a:dict, b:dict) -> float:
     result = 0
     aget = a.get
     bget = b.get
-    for key in a:
-        result = max(result, abs(aget(key,0) - bget(key,0)))
-    for key in b:
+    for key, a_val in a.items():
+        b_val = bget(key)
+        if b_val:
+            result = max(result, abs(a_val - b_val))
+        else:
+            result = max(result, a_val)
+    for key, b_val in b.items():
         if key not in a:
-            result = max(result, bget(key,0))
+            result = max(result, b_val)
     return round(result,14)
