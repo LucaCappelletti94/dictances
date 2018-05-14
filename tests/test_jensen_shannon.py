@@ -1,4 +1,4 @@
-from distances import jensen_shannon
+from dictances import jensen_shannon
 from utils import create_cases
 
 def test_jensen_shannon():

@@ -1,5 +1,5 @@
 from example_utils import generate_example_dicts
-from distances import squared_variation
+from dictances import squared_variation
 
 a, b = generate_example_dicts()
 

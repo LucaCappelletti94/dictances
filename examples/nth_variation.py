@@ -1,5 +1,5 @@
 from example_utils import generate_example_dicts
-from distances import nth_variation
+from dictances import nth_variation
 
 a, b = generate_example_dicts()
 

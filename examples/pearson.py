@@ -1,5 +1,5 @@
 from example_utils import generate_example_dicts
-from distances import pearson
+from dictances import pearson
 
 a, b = generate_example_dicts()
 

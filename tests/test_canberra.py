@@ -1,4 +1,4 @@
-from distances import canberra
+from dictances import canberra
 from utils import create_cases
 
 def test_canberra():

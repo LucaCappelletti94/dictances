@@ -1,4 +1,4 @@
-from distances import euclidean, jensen_shannon, bhattacharyya, total_variation, hellinger, squared_variation, canberra, chebyshev, cosine, hamming, mae, manhattan, mse, pearson
+from dictances import euclidean, jensen_shannon, bhattacharyya, total_variation, hellinger, squared_variation, canberra, chebyshev, cosine, hamming, mae, manhattan, mse, pearson
 from utils import create_cases
 
 def test_symmetry():

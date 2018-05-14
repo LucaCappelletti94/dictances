@@ -1,5 +1,5 @@
 from example_utils import generate_example_dicts
-from distances import minkowsky
+from dictances import minkowsky
 
 a, b = generate_example_dicts()
 

@@ -1,4 +1,4 @@
-from distances import squared_variation
+from dictances import squared_variation
 from utils import create_cases
 
 def test_squared_variation():

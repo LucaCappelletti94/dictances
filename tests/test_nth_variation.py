@@ -1,4 +1,4 @@
-from distances import nth_variation
+from dictances import nth_variation
 from utils import create_cases
 
 def test_nth_variation():

@@ -1,5 +1,5 @@
 from example_utils import generate_example_dicts
-from distances import hamming
+from dictances import hamming
 
 a, b = generate_example_dicts()
 

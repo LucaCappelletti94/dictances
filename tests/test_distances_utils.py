@@ -1,4 +1,4 @@
-from distances.distances_utils import sort
+from dictances.distances_utils import sort
 from utils import create_case
 
 def test_distances_utils():

@@ -1,4 +1,4 @@
-from distances import euclidean, jensen_shannon, bhattacharyya, total_variation, hellinger, kullback_leibler, squared_variation, canberra, chebyshev, cosine, hamming, mae, manhattan, minkowsky, mse, pearson
+from dictances import euclidean, jensen_shannon, bhattacharyya, total_variation, hellinger, kullback_leibler, squared_variation, canberra, chebyshev, cosine, hamming, mae, manhattan, minkowsky, mse, pearson
 from utils import create_case
 
 def test_origin():

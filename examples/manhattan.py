@@ -1,5 +1,5 @@
 from example_utils import generate_example_dicts
-from distances import manhattan
+from dictances import manhattan
 
 a, b = generate_example_dicts()
 

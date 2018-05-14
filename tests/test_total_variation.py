@@ -1,4 +1,4 @@
-from distances import total_variation
+from dictances import total_variation
 from utils import create_cases
 
 def test_total_variation():

@@ -1,4 +1,4 @@
-from distances import pearson
+from dictances import pearson
 from utils import create_cases
 
 def test_pearson():

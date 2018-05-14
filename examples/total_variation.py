@@ -1,5 +1,5 @@
 from example_utils import generate_example_dicts
-from distances import total_variation
+from dictances import total_variation
 
 a, b = generate_example_dicts()
 

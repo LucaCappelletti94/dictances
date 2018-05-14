@@ -1,5 +1,5 @@
 from example_utils import generate_normalized_example_dicts
-from distances import kullback_leibler
+from dictances import kullback_leibler
 
 a, b = generate_normalized_example_dicts()
 

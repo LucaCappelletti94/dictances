@@ -1,4 +1,4 @@
-from distances import kullback_leibler
+from dictances import kullback_leibler
 from utils import create_cases
 
 def test_kullback_leibler():

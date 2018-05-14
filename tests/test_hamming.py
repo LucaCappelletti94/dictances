@@ -1,4 +1,4 @@
-from distances import hamming
+from dictances import hamming
 from utils import create_cases
 
 def test_hamming():

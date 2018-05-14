@@ -1,5 +1,5 @@
 from example_utils import generate_example_dicts
-from distances import mae
+from dictances import mae
 
 a, b = generate_example_dicts()
 

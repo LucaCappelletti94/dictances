@@ -1,4 +1,4 @@
-from distances import manhattan
+from dictances import manhattan
 from utils import create_cases
 
 def test_manhattan():

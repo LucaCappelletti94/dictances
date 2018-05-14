@@ -1,4 +1,4 @@
-from distances import bhattacharyya
+from dictances import bhattacharyya
 from utils import create_cases
 
 def test_bhattacharyya():

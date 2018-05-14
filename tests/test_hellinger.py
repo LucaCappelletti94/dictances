@@ -1,4 +1,4 @@
-from distances import hellinger
+from dictances import hellinger
 from utils import create_cases
 
 def test_hellinger():

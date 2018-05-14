@@ -1,4 +1,4 @@
-from distances import mae
+from dictances import mae
 from utils import create_cases
 
 def test_mae():

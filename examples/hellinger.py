@@ -1,5 +1,5 @@
 from example_utils import generate_normalized_example_dicts
-from distances import hellinger
+from dictances import hellinger
 
 a, b = generate_normalized_example_dicts()
 

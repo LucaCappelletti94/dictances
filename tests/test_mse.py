@@ -1,4 +1,4 @@
-from distances import mse
+from dictances import mse
 from utils import create_cases
 
 def test_mse():

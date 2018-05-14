@@ -1,4 +1,4 @@
-from distances import chebyshev
+from dictances import chebyshev
 from utils import create_cases
 
 def test_chebyshev():

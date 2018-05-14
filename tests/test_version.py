@@ -1,4 +1,4 @@
-from distances.__version__ import __version__
+from dictances.__version__ import __version__
 import re
 
 def test_version():

@@ -1,5 +1,5 @@
 from example_utils import generate_example_dicts
-from distances import euclidean
+from dictances import euclidean
 
 a, b = generate_example_dicts()
 

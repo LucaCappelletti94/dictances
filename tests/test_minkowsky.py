@@ -1,4 +1,4 @@
-from distances import minkowsky
+from dictances import minkowsky
 from utils import create_cases
 
 def test_minkowsky():
