@@ -1,7 +1,6 @@
 from math import sqrt
 def pearson(a:dict, b:dict)->float:
     """Returns the nth power distance beetween a and b"""
-    aget = a.get
     bget = b.get
 
     ab = 0

@@ -7,10 +7,10 @@ from .hamming import hamming
 from .hellinger import hellinger
 from .jensen_shannon import jensen_shannon
 from .kullback_leibler import kullback_leibler
-from .MAE import MAE
+from .mae import mae
 from .manhattan import manhattan
 from .minkowsky import minkowsky
-from .MSE import MSE
+from .mse import mse
 from .nth_variation import nth_variation
 from .pearson import pearson
 from .squared_variation import squared_variation

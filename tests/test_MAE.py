@@ -1,6 +1,6 @@
-from distances import MAE
+from distances import mae
 from utils import create_cases
 
-def test_MAE():
+def test_mae():
     a, b = create_cases()
-    assert MAE(a,b) == 0.01016097225819
+    assert mae(a,b) == 0.01016097225819

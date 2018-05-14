@@ -54,9 +54,9 @@ Metrics table
 +--------------------------------+-------------------------------+-----------------------------+--------------------------------------+
 | `Manhattan distance`_          | `manhattan`_                  | 51 µs ± 1.2 µs              | |On+m|                               |
 +--------------------------------+-------------------------------+-----------------------------+--------------------------------------+
-| `Mean absolute error`_         | `MAE`_                        | 51.9 µs ± 2.4 µs            | |On+m|                               |
+| `Mean absolute error`_         | `mae`_                        | 51.9 µs ± 2.4 µs            | |On+m|                               |
 +--------------------------------+-------------------------------+-----------------------------+--------------------------------------+
-| `Mean squared error`_          | `MSE`_                        | 51.8 µs ± 1.67 µs           | |On+m|                               |
+| `Mean squared error`_          | `mse`_                        | 51.8 µs ± 1.67 µs           | |On+m|                               |
 +--------------------------------+-------------------------------+-----------------------------+--------------------------------------+
 | `Chebyshev distance`_          | `chebyshev`_                  | 49.8 µs ± 628 ns            | |On+m|                               |
 +--------------------------------+-------------------------------+-----------------------------+--------------------------------------+
@@ -141,8 +141,8 @@ The computer on which the metrics where timed had the following specifications:
 .. _hellinger: https://github.com/LucaCappelletti94/distances/blob/master/examples/hellinger.py
 .. _kullback_leibler: https://github.com/LucaCappelletti94/distances/blob/master/examples/kullback_leibler.py
 .. _manhattan: https://github.com/LucaCappelletti94/distances/blob/master/examples/manhattan.py
-.. _MAE: https://github.com/LucaCappelletti94/distances/blob/master/examples/MAE.py
-.. _MSE: https://github.com/LucaCappelletti94/distances/blob/master/examples/MSE.py
+.. _mae: https://github.com/LucaCappelletti94/distances/blob/master/examples/mae.py
+.. _mse: https://github.com/LucaCappelletti94/distances/blob/master/examples/mse.py
 .. _chebyshev: https://github.com/LucaCappelletti94/distances/blob/master/examples/chebyshev.py
 .. _minkowsky: https://github.com/LucaCappelletti94/distances/blob/master/examples/minkowski.py
 .. _canberra: https://github.com/LucaCappelletti94/distances/blob/master/examples/canberra.py

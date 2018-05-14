@@ -1,7 +1,6 @@
 def chebyshev(a:dict, b:dict) -> float:
     """Determines the Chebyshev distance"""
     result = 0
-    aget = a.get
     bget = b.get
     for key, a_val in a.items():
         b_val = bget(key)
