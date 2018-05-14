@@ -17,7 +17,7 @@ install:
 - pip install -r test_requirements.txt
 - pip install .
 script:
-- pytest --cov=./distances --cov-report xml:coverage.xml
+- pytest --cov=./dictances --cov-report xml:coverage.xml
 - sonar-scanner
 after_success:
 - coveralls
