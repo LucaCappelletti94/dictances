@@ -1,7 +1,7 @@
 from example_utils import generate_example_dicts
-from distances import euclidean
+from distances import hamming
 
 a, b = generate_example_dicts()
 
-print(euclidean(a,b))
-# >>> 15119.400349404095
+print(hamming(a,b))
+# >>> 467

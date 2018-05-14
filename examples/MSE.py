@@ -1,7 +1,7 @@
 from example_utils import generate_example_dicts
-from distances import euclidean
+from distances import MSE
 
 a, b = generate_example_dicts()
 
-print(euclidean(a,b))
-# >>> 15119.400349404095
+print(MSE(a,b))
+# >>> 260954.64260908752

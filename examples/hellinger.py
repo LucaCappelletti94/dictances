@@ -1,7 +1,7 @@
-from example_utils import generate_normalized_example_dict
+from example_utils import generate_normalized_example_dicts
 from distances import hellinger
 
-a, b = generate_normalized_example_dict(), generate_normalized_example_dict()
+a, b = generate_normalized_example_dicts()
 
 print(hellinger(a,b))
 # >>> 0.26382145453188

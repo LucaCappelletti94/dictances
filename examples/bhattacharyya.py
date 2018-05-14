@@ -1,7 +1,7 @@
-from example_utils import generate_normalized_example_dict
+from example_utils import generate_normalized_example_dicts
 from distances import bhattacharyya
 
-a, b = generate_normalized_example_dict(), generate_normalized_example_dict()
+a, b = generate_normalized_example_dicts()
 
 print(bhattacharyya(a,b))
-# >>> 0.563571437813277
+# >>> 0.56357143781328
