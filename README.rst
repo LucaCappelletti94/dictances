@@ -18,7 +18,7 @@ Just type into your terminal:
 
 .. code:: shell
 
-pip install zipf
+   pip install dictances
 
 
 Basic example
