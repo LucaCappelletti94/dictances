@@ -6,7 +6,7 @@ Dictances
 
 |travis| |coveralls| |sonar_quality| |sonar_maintainability|
 
-Distances and divergences between discrete distributions implemented in python 3.6.
+Distances and divergences between dictionaries implemented in python 3.6.
 
 In the complexity notations, :py:`n` is :py:`len(a)` and :py:`m` is :py:`len(b)`.
 
