@@ -17,6 +17,7 @@ Basic example
 For each metric, an example is present in `the folder examples`_. Here's a basic example for those too lazy to click links (like me).
 
 .. code:: python
+
     import random
     from distances import cosine
     random.seed(42) # for reproducibility
