@@ -56,7 +56,7 @@ The computer on which the metrics where timed had the following specifications:
 
 +---------------------------------------+
 | Computer specifications               |
-+=======================================+
++=======================+===============+
 | Model Name            | MacBook Pro   |
 +-----------------------+---------------+
 | Processor Name        | Intel Core i7 |
