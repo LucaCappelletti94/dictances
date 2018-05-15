@@ -4,7 +4,7 @@
 Dictances
 ==========
 
-|travis| |coveralls| |sonar_quality| |sonar_maintainability|
+|travis| |coveralls| |sonar_quality| |sonar_maintainability| |pip|
 
 Distances and divergences between dictionaries implemented in python 3.6.
 
@@ -124,6 +124,9 @@ The computer on which the metrics where timed had the following specifications:
 
 .. |sonar_maintainability| image:: https://sonarcloud.io/api/project_badges/measure?project=distances.lucacappelletti&metric=sqale_rating
     :target: https://sonarcloud.io/dashboard/index/distances.lucacappelletti
+
+.. |pip| image:: https://badge.fury.io/py/dictances.svg
+    :target: https://badge.fury.io/py/dictances
 
 .. _Euclidean distance: https://en.wikipedia.org/wiki/Euclidean_distance
 .. _Manhattan distance: https://en.wikipedia.org/wiki/Taxicab_geometry
