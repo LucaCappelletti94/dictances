@@ -113,8 +113,8 @@ The computer on which the metrics where timed had the following specifications:
 | Memory                | 16 GB         |
 +-----------------------+---------------+
 
-.. |travis| image:: https://travis-ci.org/LucaCappelletti94/distances.png
-   :target: https://travis-ci.org/LucaCappelletti94/distances
+.. |travis| image:: https://travis-ci.org/LucaCappelletti94/dictances.png
+   :target: https://travis-ci.org/LucaCappelletti94/dictances
 
 .. |coveralls| image:: https://coveralls.io/repos/github/LucaCappelletti94/distances/badge.svg?branch=master
     :target: https://coveralls.io/github/LucaCappelletti94/distances
