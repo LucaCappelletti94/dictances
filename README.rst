@@ -28,7 +28,7 @@ For each metric, an example is present in `the folder examples`_. Here's a basic
 .. code:: python
 
     import random
-    from dictances import cosine
+    from dictances import cosine, euclidean, canberra
     random.seed(42) # for reproducibility
 
     # Simple function to generate the example dictionaries
