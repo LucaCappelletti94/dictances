@@ -119,11 +119,11 @@ The computer on which the metrics where timed had the following specifications:
 .. |coveralls| image:: https://coveralls.io/repos/github/LucaCappelletti94/distances/badge.svg?branch=master
     :target: https://coveralls.io/github/LucaCappelletti94/distances
 
-.. |sonar_quality| image:: https://sonarcloud.io/api/project_badges/measure?project=distances.lucacappelletti&metric=alert_status
-    :target: https://sonarcloud.io/dashboard/index/distances.lucacappelletti
+.. |sonar_quality| image:: https://sonarcloud.io/api/project_badges/measure?project=dictances.lucacappelletti&metric=alert_status
+    :target: https://sonarcloud.io/dashboard/index/dictances.lucacappelletti
 
-.. |sonar_maintainability| image:: https://sonarcloud.io/api/project_badges/measure?project=distances.lucacappelletti&metric=sqale_rating
-    :target: https://sonarcloud.io/dashboard/index/distances.lucacappelletti
+.. |sonar_maintainability| image:: https://sonarcloud.io/api/project_badges/measure?project=dictances.lucacappelletti&metric=sqale_rating
+    :target: https://sonarcloud.io/dashboard/index/dictances.lucacappelletti
 
 .. |pip| image:: https://badge.fury.io/py/dictances.svg
     :target: https://badge.fury.io/py/dictances
