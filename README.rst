@@ -4,7 +4,7 @@
 Dictances
 ==========
 
-|travis| |coveralls| |sonar_quality| |sonar_maintainability| |pip|
+|travis| |coveralls| |sonar_quality| |sonar_maintainability| |code_climate_maintainability| |code_climate_test_coverage| |pip|
 
 Distances and divergences between dictionaries implemented in python 3.6.
 
@@ -124,6 +124,15 @@ The computer on which the metrics where timed had the following specifications:
 
 .. |sonar_maintainability| image:: https://sonarcloud.io/api/project_badges/measure?project=dictances.lucacappelletti&metric=sqale_rating
     :target: https://sonarcloud.io/dashboard/index/dictances.lucacappelletti
+
+.. |code_climate_maintainability| .. image:: https://api.codeclimate.com/v1/badges/25fb7c6119e188dbd12c/maintainability
+   :target: https://codeclimate.com/github/LucaCappelletti94/dictances/maintainability
+   :alt: Maintainability
+
+.. |code_climate_test_coverage| .. image:: https://api.codeclimate.com/v1/badges/25fb7c6119e188dbd12c/test_coverage
+   :target: https://codeclimate.com/github/LucaCappelletti94/dictances/test_coverage
+   :alt: Test Coverage
+
 
 .. |pip| image:: https://badge.fury.io/py/dictances.svg
     :target: https://badge.fury.io/py/dictances
