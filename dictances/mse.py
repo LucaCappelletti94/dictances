@@ -1,5 +1,5 @@
 from .squared_variation import squared_variation
+from .distances_utils import mean
 
-def mse(a,b):
-    result, n = squared_variation(a,b,overlap=True)
-    return round(result/n,14)
+def mae(a,b):
+    return mean(a,b,squared_variation)

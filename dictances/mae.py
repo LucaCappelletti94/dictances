@@ -1,5 +1,5 @@
 from .total_variation import total_variation
+from .distances_utils import mean
 
 def mae(a,b):
-    result, n = total_variation(a,b,overlap=True)
-    return round(result/n,14)
+    return mean(a,b,total_variation)
