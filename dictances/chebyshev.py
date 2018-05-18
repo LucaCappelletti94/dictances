@@ -1,4 +1,4 @@
-def chebyshev(a:dict, b:dict) -> float:
+def chebyshev(a: dict, b: dict) -> float:
     """Determines the Chebyshev distance"""
     result = 0
     bget = b.get
@@ -11,4 +11,4 @@ def chebyshev(a:dict, b:dict) -> float:
     for key, b_val in b.items():
         if key not in a:
             result = max(result, b_val)
-    return round(result,14)
+    return round(result, 14)

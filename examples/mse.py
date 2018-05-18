@@ -3,5 +3,5 @@ from dictances import mse
 
 a, b = generate_example_dicts()
 
-print(mse(a,b))
+print(mse(a, b))
 # >>> 260954.64260908752

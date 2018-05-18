@@ -3,5 +3,5 @@ from dictances import manhattan
 
 a, b = generate_example_dicts()
 
-print(manhattan(a,b))
+print(manhattan(a, b))
 # >>> 376204.668226937

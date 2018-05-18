@@ -3,5 +3,5 @@ from dictances import hellinger
 
 a, b = generate_normalized_example_dicts()
 
-print(hellinger(a,b))
+print(hellinger(a, b))
 # >>> 0.26382145453188

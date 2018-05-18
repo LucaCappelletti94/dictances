@@ -1,11 +1,12 @@
 from .distances_utils import sort
 from math import log
 
-def jensen_shannon(a:dict, b:dict)->float:
+
+def jensen_shannon(a: dict, b: dict)->float:
     """Returns the jensen shannon divergence beetween a and b"""
     total = 0
     delta = 0
-    big, small = sort(a,b)
+    big, small = sort(a, b)
 
     big_get = big.get
 
@@ -19,4 +20,4 @@ def jensen_shannon(a:dict, b:dict)->float:
             delta += value
 
     total += (1+delta)*log(2)
-    return round(total/2,14)
+    return round(total/2, 14)

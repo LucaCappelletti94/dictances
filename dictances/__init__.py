@@ -15,3 +15,4 @@ from .nth_variation import nth_variation
 from .pearson import pearson
 from .squared_variation import squared_variation
 from .total_variation import total_variation
+from .normal_total_variation import normal_total_variation

@@ -3,5 +3,5 @@ from dictances import bhattacharyya
 
 a, b = generate_normalized_example_dicts()
 
-print(bhattacharyya(a,b))
+print(bhattacharyya(a, b))
 # >>> 0.56357143781328

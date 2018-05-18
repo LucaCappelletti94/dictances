@@ -79,6 +79,8 @@ Metrics table
 +--------------------------------+-------------------------------+-----------------------------+--------------------------------------+
 | `Hamming distance`_            | `hamming`_                    | 5.57 µs ± 191 ns            | |Omin|                               |
 +--------------------------------+-------------------------------+-----------------------------+--------------------------------------+
+| Normalized Total Variation     | `normal_total_variation`_     | 15.2 µs ± 573 ns            | |Omin|                               |
++--------------------------------+-------------------------------+-----------------------------+--------------------------------------+
 | `Kullback Leibler divergence`_ | `kullback_leibler`_           | 31.6 µs ± 591 ns            | |Omin|                               |
 +--------------------------------+-------------------------------+-----------------------------+--------------------------------------+
 | `Jensen Shannon divergence`_   | `jensen_shannon`_             | 21.1 µs ± 442 ns            | |Omin|                               |
@@ -169,6 +171,7 @@ The computer on which the metrics where timed had the following specifications:
 .. _cosine: https://github.com/LucaCappelletti94/distances/blob/master/examples/cosine.py
 .. _pearson: https://github.com/LucaCappelletti94/distances/blob/master/examples/pearson.py
 .. _hamming: https://github.com/LucaCappelletti94/distances/blob/master/examples/hamming.py
+.. _normal_total_variation: https://github.com/LucaCappelletti94/distances/blob/master/examples/normal_total_variation.py
 
 .. _test utilities here: https://github.com/LucaCappelletti94/distances/blob/master/tests/helpers/utils.py
 .. _the folder examples: https://github.com/LucaCappelletti94/distances/tree/master/examples

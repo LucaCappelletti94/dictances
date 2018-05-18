@@ -3,5 +3,5 @@ from dictances import hamming
 
 a, b = generate_example_dicts()
 
-print(hamming(a,b))
+print(hamming(a, b))
 # >>> 467

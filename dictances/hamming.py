@@ -1,4 +1,4 @@
-def hamming(a:dict, b:dict)->float:
+def hamming(a: dict, b: dict)->float:
     """Returns the hamming distance beetween a and b"""
     common = 0
     for k in a:

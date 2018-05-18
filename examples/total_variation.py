@@ -3,5 +3,5 @@ from dictances import total_variation
 
 a, b = generate_example_dicts()
 
-print(total_variation(a,b))
+print(total_variation(a, b))
 # >>> 376204.668226937

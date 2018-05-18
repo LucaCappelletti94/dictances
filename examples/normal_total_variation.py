@@ -1,7 +1,7 @@
 from example_utils import generate_normalized_example_dicts
-from dictances import jensen_shannon
+from dictances import normal_total_variation
 
 a, b = generate_normalized_example_dicts()
 
-print(jensen_shannon(a, b))
-# >>> 0.3145726162024
+print(normal_total_variation(a, b))
+# >>> 0.57772309258949

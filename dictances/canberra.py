@@ -1,4 +1,4 @@
-def canberra(a:dict, b:dict)->float:
+def canberra(a: dict, b: dict)->float:
     """Returns the canberra distance beetween a and b"""
     total = 0
     aget = a.get
@@ -13,4 +13,4 @@ def canberra(a:dict, b:dict)->float:
     for k in b:
         if k not in a:
             total += 1
-    return round(total,14)
+    return round(total, 14)
