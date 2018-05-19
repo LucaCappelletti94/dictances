@@ -29,22 +29,26 @@ For each metric, an example is present in `the folder examples`_. Here's a basic
 
     import random
     from dictances import cosine, euclidean, canberra
-    random.seed(42) # for reproducibility
+    random.seed(42)  # for reproducibility
 
     # Simple function to generate the example dictionaries
+
+
     def generate_example_dict(n=1000):
-        return {random.randint(0,1000):random.uniform(0,1000) for i in range(n)}
+        return {random.randint(0, 1000): random.uniform(0, 1000) for i in range(n)}
+
 
     a, b = generate_example_dict(), generate_example_dict()
 
-    print(cosine(a,b))
+    print(cosine(a, b))
     # >>> 0.52336690346601
 
-    print(euclidean(a,b))
+    print(euclidean(a, b))
     # >>> 15119.400349404095
 
-    print(canberra(a,b))
+    print(canberra(a, b))
     # >>> 624.9088876554047
+
 
 
 Metrics table

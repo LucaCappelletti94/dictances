@@ -12,9 +12,11 @@ here = path.abspath(path.dirname(__file__))
 with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
     long_description = f.read()
 
+
 def read(*parts):
     with open(os.path.join(here, *parts), 'r') as fp:
         return fp.read()
+
 
 def find_version(*file_paths):
     version_file = read(*file_paths)
@@ -23,6 +25,7 @@ def find_version(*file_paths):
     if version_match:
         return version_match.group(1)
     raise RuntimeError("Unable to find version string.")
+
 
 __version__ = find_version("dictances", "__version__.py")
 
@@ -79,8 +82,10 @@ setup(
     install_requires=[]
 )
 
+
 def status(s):
     print('\033[1m{0}\033[0m'.format(s))
+
 
 status('Pushing git tags…')
 os.system('git tag v{0}'.format(__version__))
