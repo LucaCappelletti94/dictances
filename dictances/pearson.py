@@ -1,8 +1,9 @@
+"""Return the nth power distance beetween a and b."""
 from math import sqrt
 
 
 def pearson(a: dict, b: dict)->float:
-    """Returns the nth power distance beetween a and b"""
+    """Return the nth power distance beetween a and b."""
     bget = b.get
 
     ab = 0
@@ -18,7 +19,7 @@ def pearson(a: dict, b: dict)->float:
         a_sum2 += a_val**2
         if b_val:
             n_mul += 1
-            ab += a_val*b_val
+            ab += a_val * b_val
 
     for k, b_val in b.items():
         b_sum += b_val
@@ -27,7 +28,7 @@ def pearson(a: dict, b: dict)->float:
     len_a = len(a)
     len_b = len(b)
 
-    a_mean = a_sum/len_a
-    b_mean = b_sum/len_b
+    a_mean = a_sum / len_a
+    b_mean = b_sum / len_b
 
-    return 1-round((ab - n_mul*a_mean*b_mean) / (sqrt(a_sum2 - len_a*a_mean**2)*sqrt(b_sum2 - len_b*b_mean**2)), 14)
+    return 1 - round((ab - n_mul * a_mean * b_mean) / (sqrt(a_sum2 - len_a * a_mean**2) * sqrt(b_sum2 - len_b * b_mean**2)), 14)

@@ -1,14 +1,17 @@
-from .distances_utils import sort
+"""Determine the Hellinger distance."""
 from math import sqrt
+
+from .distances_utils import sort
 
 
 def hellinger(a: dict, b: dict) -> float:
-    """Determines the Hellinger distance"""
+    """Determine the Hellinger distance."""
     total = 0
     big, small = sort(a, b)
-    big_get = big.get
+    big_get = big.__getitem__
     for key, small_value in small.items():
-        big_value = big_get(key)
-        if big_value:
-            total += (sqrt(small_value)-sqrt(big_value))**2
-    return round(sqrt(total)/sqrt(2), 14)
+        try:
+            total += (sqrt(small_value) - sqrt(big_get(key)))**2
+        except KeyError:
+            pass
+    return round(sqrt(total) / sqrt(2), 14)

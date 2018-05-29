@@ -1,16 +1,20 @@
+"""Return the canberra distance beetween a and b."""
+
+
 def canberra(a: dict, b: dict)->float:
-    """Returns the canberra distance beetween a and b"""
+    """Return the canberra distance beetween a and b."""
     total = 0
-    aget = a.get
-    bget = b.get
-    for k in a:
-        aval = aget(k)
-        bval = bget(k)
-        if bval:
-            total += abs(aval-bval)/(aval+bval)
-        else:
+    bget = b.__getitem__
+    aget = a.__getitem__
+    for k, aval in a.items():
+        try:
+            bval = bget(k)
+            total += abs(aval - bval) / (aval + bval)
+        except KeyError as e:
             total += 1
     for k in b:
-        if k not in a:
+        try:
+            aget(k)
+        except KeyError:
             total += 1
     return round(total, 14)

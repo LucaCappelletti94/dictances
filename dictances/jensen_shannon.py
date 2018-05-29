@@ -1,23 +1,26 @@
-from .distances_utils import sort
+"""Return the jensen shannon divergence beetween a and b."""
 from math import log
+
+from .distances_utils import sort
 
 
 def jensen_shannon(a: dict, b: dict)->float:
-    """Returns the jensen shannon divergence beetween a and b"""
+    """Return the jensen shannon divergence beetween a and b."""
     total = 0
     delta = 0
     big, small = sort(a, b)
 
-    big_get = big.get
+    big_get = big.__getitem__
 
     for key, value in small.items():
-        ov = big_get(key)
-        if ov:
-            denominator = (ov + value)/2
-            total += value*log(value/denominator) + ov*log(ov/denominator)
+        try:
+            ov = big_get(key)
+            denominator = (ov + value) / 2
+            total += value * log(value / denominator) + \
+                ov * log(ov / denominator)
             delta -= ov
-        else:
+        except KeyError:
             delta += value
 
-    total += (1+delta)*log(2)
-    return round(total/2, 14)
+    total += (1 + delta) * log(2)
+    return round(total / 2, 14)

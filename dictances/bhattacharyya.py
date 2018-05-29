@@ -1,19 +1,22 @@
+"""Determine the bhattacharyya distance."""
+from math import log, sqrt
+
 from .distances_utils import sort
-from math import sqrt, log
 
 
 def bhattacharyya_coefficient(a: dict, b: dict) -> float:
-    """Determines the bhattacharyya coefficient"""
+    """Determine the bhattacharyya coefficient."""
     total = 0
     big, small = sort(a, b)
-    big_get = big.get
+    big_get = big.__getitem__
     for k, small_value in small.items():
-        big_value = big_get(k)
-        if big_value:
-            total += sqrt(big_value*small_value)
+        try:
+            total += sqrt(big_get(k) * small_value)
+        except KeyError:
+            pass
     return total
 
 
 def bhattacharyya(a: dict, b: dict) -> float:
-    """Determines the bhattacharyya distance"""
+    """Determine the bhattacharyya distance."""
     return round(-log(bhattacharyya_coefficient(a, b)), 14)

@@ -1,13 +1,16 @@
+"""Determine the Normalized Total Variation distance."""
 from .distances_utils import sort
 
 
 def normal_total_variation(a: dict, b: dict) -> float:
-    """Determines the Normalized Total Variation distance"""
+    """Determine the Normalized Total Variation distance."""
     big, small = sort(a, b)
-    big_get = big.get
+    big_get = big.__getitem__
     total = 2
     for k, small_value in small.items():
-        big_value = big_get(k)
-        if big_value:
-            total += abs(big_value-small_value) - big_value - small_value
-    return round(total/2, 14)
+        try:
+            big_value = big_get(k)
+            total += abs(big_value - small_value) - big_value - small_value
+        except KeyError as e:
+            pass
+    return round(total / 2, 14)

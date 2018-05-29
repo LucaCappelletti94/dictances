@@ -1,14 +1,19 @@
+"""Determine the Chebyshev distance."""
+
+
 def chebyshev(a: dict, b: dict) -> float:
-    """Determines the Chebyshev distance"""
+    """Determine the Chebyshev distance."""
     result = 0
-    bget = b.get
+    bget = b.__getitem__
+    aget = a.__getitem__
     for key, a_val in a.items():
-        b_val = bget(key)
-        if b_val:
-            result = max(result, abs(a_val - b_val))
-        else:
+        try:
+            result = max(result, abs(a_val - bget(key)))
+        except KeyError:
             result = max(result, a_val)
     for key, b_val in b.items():
-        if key not in a:
+        try:
+            aget(key)
+        except KeyError:
             result = max(result, b_val)
     return round(result, 14)

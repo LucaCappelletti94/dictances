@@ -1,14 +1,18 @@
-from .distances_utils import sort
+"""Determine the Kullback Leibler divergence."""
 from math import log
+
+from .distances_utils import sort
 
 
 def kullback_leibler(a: dict, b: dict) -> float:
-    """Determines the Kullback–Leibler divergence"""
+    """Determine the Kullback Leibler divergence."""
     total = 0
     big, small = sort(a, b)
-    big_get = big.get
+    big_get = big.__getitem__
     for key, small_value in a.items():
-        big_value = big_get(key)
-        if big_value:
-            total += small_value*log(small_value/big_value)
+        try:
+            total += small_value * log(small_value / big_get(key))
+        except KeyError:
+            pass
+
     return round(total, 14)
