@@ -11,7 +11,9 @@ def kullback_leibler(a: dict, b: dict) -> float:
     big_get = big.__getitem__
     for key, small_value in a.items():
         try:
-            total += small_value * log(small_value / big_get(key))
+            bvalue = big_get(key)
+            if bvalue:
+                total += small_value * log(small_value / big_get(key))
         except KeyError:
             pass
 

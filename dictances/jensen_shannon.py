@@ -15,10 +15,13 @@ def jensen_shannon(a: dict, b: dict)->float:
     for key, value in small.items():
         try:
             ov = big_get(key)
-            denominator = (ov + value) / 2
-            total += value * log(value / denominator) + \
-                ov * log(ov / denominator)
-            delta -= ov
+            if ov:
+                denominator = (ov + value) / 2
+                total += value * log(value / denominator) + \
+                    ov * log(ov / denominator)
+                delta -= ov
+            else:
+                delta += value
         except KeyError:
             delta += value
 
