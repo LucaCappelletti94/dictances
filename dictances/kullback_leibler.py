@@ -15,4 +15,4 @@ def kullback_leibler(a: dict, b: dict) -> float:
         except KeyError:
             pass
 
-    return round(total, 14)
+    return total

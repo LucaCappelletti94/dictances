@@ -17,4 +17,4 @@ def canberra(a: dict, b: dict)->float:
             aget(k)
         except KeyError:
             total += 1
-    return round(total, 14)
+    return total

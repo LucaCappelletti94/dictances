@@ -14,4 +14,4 @@ def hellinger(a: dict, b: dict) -> float:
             total += (sqrt(small_value) - sqrt(big_get(key)))**2
         except KeyError:
             pass
-    return round(sqrt(total) / sqrt(2), 14)
+    return sqrt(total) / sqrt(2)

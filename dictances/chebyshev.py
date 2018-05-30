@@ -16,4 +16,4 @@ def chebyshev(a: dict, b: dict) -> float:
             aget(key)
         except KeyError:
             result = max(result, b_val)
-    return round(result, 14)
+    return result

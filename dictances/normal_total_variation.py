@@ -13,4 +13,4 @@ def normal_total_variation(a: dict, b: dict) -> float:
             total += abs(big_value - small_value) - big_value - small_value
         except KeyError as e:
             pass
-    return round(total / 2, 14)
+    return total / 2

@@ -33,7 +33,7 @@ def nth_variation(a: dict, b: dict, exp: float=2, overlap: bool=False)->float:
         except KeyError:
             total += b_val**exp
             n += 1
-    result = round(total, 14)
+    result = total
     if overlap:
         return result, n
     return result

@@ -19,4 +19,4 @@ def bhattacharyya_coefficient(a: dict, b: dict) -> float:
 
 def bhattacharyya(a: dict, b: dict) -> float:
     """Determine the bhattacharyya distance."""
-    return round(-log(bhattacharyya_coefficient(a, b)), 14)
+    return -log(bhattacharyya_coefficient(a, b))

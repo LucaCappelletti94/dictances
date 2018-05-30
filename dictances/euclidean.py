@@ -4,4 +4,4 @@ from .minkowsky import minkowsky
 
 def euclidean(a: dict, b: dict)->float:
     """Return the euclidean distance beetween a and b."""
-    return round(minkowsky(a, b, 2), 14)
+    return minkowsky(a, b, 2)

@@ -23,4 +23,4 @@ def jensen_shannon(a: dict, b: dict)->float:
             delta += value
 
     total += (1 + delta) * log(2)
-    return round(total / 2, 14)
+    return total / 2
