@@ -10,7 +10,8 @@ def normal_total_variation(a: dict, b: dict) -> float:
     for k, small_value in small.items():
         try:
             big_value = big_get(k)
-            total += abs(big_value - small_value) - big_value - small_value
-        except KeyError as e:
+            if big_value:
+                total += abs(big_value - small_value) - big_value - small_value
+        except KeyError:
             pass
     return total / 2
