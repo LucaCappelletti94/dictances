@@ -1,5 +1,5 @@
 """Import all the functions offered by package dictances."""
-from .bhattacharyya import bhattacharyya
+from .bhattacharyya import bhattacharyya, bhattacharyya_coefficient
 from .canberra import canberra
 from .chebyshev import chebyshev
 from .cosine import cosine
@@ -18,7 +18,7 @@ from .pearson import pearson
 from .squared_variation import squared_variation
 from .total_variation import total_variation
 
-__all__ = ['bhattacharyya', 'canberra', 'chebyshev', 'cosine', 'euclidean',
+__all__ = ['bhattacharyya', 'bhattacharyya_coefficient', 'canberra', 'chebyshev', 'cosine', 'euclidean',
            'hamming', 'hellinger', 'jensen_shannon', 'kullback_leibler',
            'mae', 'manhattan', 'minkowsky', 'mse', 'normal_total_variation',
            'nth_variation', 'pearson', 'squared_variation', 'total_variation']
