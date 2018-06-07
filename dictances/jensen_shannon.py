@@ -12,18 +12,16 @@ def jensen_shannon(a: dict, b: dict)->float:
 
     big_get = big.__getitem__
 
-    for key, value in small.items():
+    for key, small_value in small.items():
         try:
             big_value = big_get(key)
             if big_value:
-                denominator = (big_value + value) / 2
-                total += value * log(value / denominator) + \
+                denominator = (big_value + small_value) / 2
+                total += small_value * log(small_value / denominator) + \
                     big_value * log(big_value / denominator)
-                delta -= big_value
-            else:
-                delta += value
+                delta += big_value + small_value
         except KeyError:
-            delta += value
+            pass
 
-    total += (1 + delta) * log(2)
+    total += (2 - delta) * log(2)
     return total / 2
