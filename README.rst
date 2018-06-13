@@ -122,8 +122,8 @@ The computer on which the metrics where timed had the following specifications:
 .. |travis| image:: https://travis-ci.org/LucaCappelletti94/dictances.png
    :target: https://travis-ci.org/LucaCappelletti94/dictances
 
-.. |coveralls| image:: https://coveralls.io/repos/github/LucaCappelletti94/distances/badge.svg?branch=master
-    :target: https://coveralls.io/github/LucaCappelletti94/distances
+.. |coveralls| image:: https://coveralls.io/repos/github/LucaCappelletti94/dictances/badge.svg?branch=master
+    :target: https://coveralls.io/github/LucaCappelletti94/dictances
 
 .. |sonar_quality| image:: https://sonarcloud.io/api/project_badges/measure?project=dictances.lucacappelletti&metric=alert_status
     :target: https://sonarcloud.io/dashboard/index/dictances.lucacappelletti
