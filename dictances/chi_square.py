@@ -11,10 +11,10 @@ def chi_square(a: dict, b: dict)->float:
         except KeyError:
             total += aval
 
-        for k in b:
-            try:
-                a[k]
-            except KeyError:
-                total += b[k]
+    for k in b:
+        try:
+            a[k]
+        except KeyError:
+            total += b[k]
 
     return total

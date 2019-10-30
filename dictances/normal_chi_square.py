@@ -14,10 +14,10 @@ def normal_chi_square(a: dict, b: dict)->float:
         except KeyError:
             total += aval
 
-        for k in b:
-            try:
-                a[k]
-            except KeyError:
-                total += b[k]*b_factor
+    for k in b:
+        try:
+            a[k]
+        except KeyError:
+            total += b[k]*b_factor
 
     return total
