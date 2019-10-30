@@ -2,6 +2,7 @@
 from .bhattacharyya import bhattacharyya, bhattacharyya_coefficient
 from .canberra import canberra
 from .chebyshev import chebyshev
+from .chi_square import chi_square
 from .cosine import cosine
 from .euclidean import euclidean
 from .hamming import hamming
@@ -23,7 +24,7 @@ from .squared_variation import squared_variation
 from .total_variation import total_variation
 
 __all__ = ['bhattacharyya', 'bhattacharyya_coefficient', 'canberra',
-           'chebyshev', 'cosine', 'euclidean',
+           'chebyshev', 'chi_square', 'cosine', 'euclidean',
            'hamming', 'hellinger', 'jensen_shannon', 'kullback_leibler',
            'mae', 'manhattan', 'minkowsky', 'mse', 'normal_total_variation',
            'nth_variation', 'pearson', 'squared_variation', 'total_variation',
