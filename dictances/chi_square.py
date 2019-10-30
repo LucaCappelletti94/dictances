@@ -28,5 +28,4 @@ def chi_square(a: dict, b: dict)->float:
                 a_norm[k]
             except KeyError:
                 total += b_norm[k]
-    
     return total
