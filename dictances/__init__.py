@@ -16,6 +16,7 @@ from .mae import mae
 from .manhattan import manhattan
 from .minkowsky import minkowsky
 from .mse import mse
+from .normal_chi_square import normal_chi_square
 from .normal_total_variation import normal_total_variation
 from .nth_variation import nth_variation
 from .pearson import pearson
@@ -26,7 +27,7 @@ from .total_variation import total_variation
 __all__ = ['bhattacharyya', 'bhattacharyya_coefficient', 'canberra',
            'chebyshev', 'chi_square', 'cosine', 'euclidean',
            'hamming', 'hellinger', 'jensen_shannon', 'kullback_leibler',
-           'mae', 'manhattan', 'minkowsky', 'mse', 'normal_total_variation',
-           'nth_variation', 'pearson', 'squared_variation', 'total_variation',
-           'squared_hellinger', 'intersection_squared_variation',
-           'intersection_squared_hellinger']
+           'mae', 'manhattan', 'minkowsky', 'mse', 'normal_chi_square',
+           'normal_total_variation', 'nth_variation', 'pearson',
+           'squared_variation', 'total_variation', 'squared_hellinger',
+           'intersection_squared_variation', 'intersection_squared_hellinger']
