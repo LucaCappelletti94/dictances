@@ -8,7 +8,6 @@ def normal_chi_square(a: dict, b: dict)->float:
     total = 0
     for k, aval in a.items():
         aval = aval*a_factor
-        print(aval)
         try:
             bval = b[k]*b_factor
             total += (aval - bval) * (aval - bval) / (aval + bval)
