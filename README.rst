@@ -33,15 +33,13 @@ A number of distances and divergences are available:
 - jensen_shannon
 - kullback_leibler
 - mae
-- manhattan
-- cityblock
+- manhattan, cityblock, total_variation
 - minkowsky
 - mse
 - normal_total_variation
 - nth_variation
 - pearson
 - squared_variation
-- total_variation
 - intersection_squared_variation
 - intersection_squared_hellinger
 - intersection_nth_variation
