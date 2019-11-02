@@ -1,105 +1,89 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
-
+**/__pycache__/*
 # C extensions
+*/__pycache__/*
+.cache
+# mypy
+*.egg-info/
+.scrapy
+*$py.class
 *.so
-
-# Distribution / packaging
-.Python
-env/
-build/
+# Flask stuff:
+\.DS_Store
 develop-eggs/
-dist/
-downloads/
-eggs/
+*.cover
+# Installer logs
+.coverage.*
+\.pytest_cache/
+__pycache__/
+# Scrapy stuff:
+.tox/
+# Spyder project settings
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+target/
+instance/
+.Python
+#  Usually these files are written by a python script from a template
+nosetests.xml
+*.log
 .eggs/
 lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-
-# PyInstaller
-#  Usually these files are written by a python script from a template
-#  before PyInstaller builds the exe, so as to inject date/other infos into it.
-*.manifest
-*.spec
-
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
-
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-.hypothesis/
-
-# Translations
-*.mo
-*.pot
-
-# Django stuff:
-*.log
-local_settings.py
-
-# Flask stuff:
-instance/
-.webassets-cache
-
-# Scrapy stuff:
-.scrapy
-
-# Sphinx documentation
-docs/_build/
-
-# PyBuilder
-target/
-
-# Jupyter Notebook
+.coverage*
 .ipynb_checkpoints
-
-# pyenv
-.python-version
-
-# celery beat schedule file
-celerybeat-schedule
-
-# SageMath parsed files
-*.sage.py
-
+.hypothesis/
+# Translations
+__pycache__
+.single_run
+.coverage
 # dotenv
-.env
-
-# virtualenv
-.venv
-venv/
-ENV/
-
-# Spyder project settings
+*.spec
+# pyenv
+*.sage.py
+lib64/
+var/
+# celery beat schedule file
 .spyderproject
 .spyproject
-
-# Rope project settings
-.ropeproject
-
-# mkdocs documentation
-/site
-
-# mypy
+htmlcov/
+build/
 .mypy_cache/
-
-\.DS_Store
-
-\.pytest_cache/
+.ropeproject
+\.vscode/
+.python-version
+# PyInstaller
+*.pot
+# Django stuff:
+parts/
+pip-log.txt
+*.mo
+# Byte-compiled / optimized / DLL files
+# Jupyter Notebook
+/site
+downloads/
+# Unit test / coverage reports
+venv/
+# Rope project settings
+*.egg
+# PyBuilder
+# virtualenv
+# Distribution / packaging
+docs/_build/
+# SageMath parsed files
+.webassets-cache
+*.py[cod]
+eggs/
+sdist/
+pip-delete-this-directory.txt
+# Sphinx documentation
+dist/
+*.manifest
+wheels/
+env/
+celerybeat-schedule
+local_settings.py
+.notipy.json
+ENV/
+coverage.xml
+.env
+# mkdocs documentation
+.venv
+.installed.cfg

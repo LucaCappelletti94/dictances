@@ -1,7 +1,5 @@
+from validate_version_code import validate_version_code
 from dictances.__version__ import __version__
-import re
-
 
 def test_version():
-    pattern = re.compile("\d+\.\d+\.\d+")
-    assert pattern.match(__version__)
+    assert validate_version_code(__version__)
