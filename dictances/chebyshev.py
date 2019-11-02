@@ -1,8 +1,21 @@
-"""Determine the Chebyshev distance."""
+"""Determine the Chebyshev distance beetween the given dictionaries."""
+from typing import Dict
 
 
-def chebyshev(a: dict, b: dict) -> float:
-    """Determine the Chebyshev distance."""
+def chebyshev(a: Dict, b: Dict) -> float:
+    """Determine the Chebyshev distance beetween the given dictionaries.
+
+    Parameters
+    ----------------------------
+    a: Dict,
+        First dictionary to consider.
+    b: Dict,
+        Second dictionary to consider.
+
+    Returns
+    ----------------------------
+    Return the Chebyshev distance beetween the given dictionaries.
+    """
     result = 0
     bget = b.__getitem__
     aget = a.__getitem__

@@ -1,10 +1,10 @@
 """Return the jensen shannon divergence beetween a and b."""
 from math import log
-
+from typing import Dict
 from .distances_utils import sort
 
 
-def jensen_shannon(a: dict, b: dict)->float:
+def jensen_shannon(a: Dict, b: Dict)->float:
     """Return the jensen shannon divergence beetween a and b."""
     total = 0
     delta = 0

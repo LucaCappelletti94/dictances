@@ -1,10 +1,10 @@
 """Determine the Hellinger distance."""
 from math import isclose, sqrt
-
+from typing import Dict
 from .squared_hellinger import squared_hellinger
 
 
-def hellinger(a: dict, b: dict) -> float:
+def hellinger(a: Dict, b: Dict) -> float:
     """Determine the Hellinger distance."""
     try:
         v = squared_hellinger(a, b)

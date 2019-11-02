@@ -1,8 +1,8 @@
 """Return the nth power distance beetween a and b."""
 from math import sqrt
+from typing import Dict
 
-
-def pearson(a: dict, b: dict)->float:
+def pearson(a: Dict, b: Dict)->float:
     """Return the nth power distance beetween a and b."""
     bget = b.get
 

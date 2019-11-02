@@ -32,6 +32,10 @@ test_deps =[
     "pytest",
     "pytest-cov",
     "coveralls",
+    "numpy",
+    "scipy",
+    "tqdm",
+    "random_dict",
     "validate_version_code",
     "codacy-coverage"
 ]

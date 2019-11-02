@@ -1,7 +1,7 @@
 """Return the hamming distance beetween a and b."""
+from typing import Dict
 
-
-def hamming(a: dict, b: dict)->float:
+def hamming(a: Dict, b: Dict)->float:
     """Return the hamming distance beetween a and b."""
     common = 0
     bget = b.__getitem__

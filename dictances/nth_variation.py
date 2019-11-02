@@ -1,5 +1,5 @@
 """Return the nth power distance beetween a and b."""
-
+from typing import Dict
 
 def _even_nth(a_val: float, b_val: float)->float:
     return a_val - b_val
@@ -9,7 +9,7 @@ def _odd_nth(a_val: float, b_val: float)->float:
     return abs(a_val - b_val)
 
 
-def nth_variation(a: dict, b: dict, exp: float=2, overlap: bool=False)->float:
+def nth_variation(a: Dict, b: Dict, exp: float=2, overlap: bool=False)->float:
     """Return the nth power distance beetween a and b."""
     total = 0
     n = 0

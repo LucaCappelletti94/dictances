@@ -1,8 +1,8 @@
 """Determine the Normalized Total Variation distance."""
 from .distances_utils import sort
+from typing import Dict
 
-
-def normal_total_variation(a: dict, b: dict) -> float:
+def normal_total_variation(a: Dict, b: Dict) -> float:
     """Determine the Normalized Total Variation distance."""
     big, small = sort(a, b)
     big_get = big.__getitem__

@@ -1,10 +1,10 @@
 """Determine the bhattacharyya distance."""
 from math import log, sqrt
-
+from typing import Dict
 from .distances_utils import sort
 
 
-def bhattacharyya_coefficient(a: dict, b: dict) -> float:
+def bhattacharyya_coefficient(a: Dict, b: Dict) -> float:
     """Determine the bhattacharyya coefficient."""
     total = 0
     big, small = sort(a, b)
@@ -17,6 +17,6 @@ def bhattacharyya_coefficient(a: dict, b: dict) -> float:
     return total
 
 
-def bhattacharyya(a: dict, b: dict) -> float:
+def bhattacharyya(a: Dict, b: Dict) -> float:
     """Determine the bhattacharyya distance."""
     return -log(bhattacharyya_coefficient(a, b))

@@ -1,10 +1,10 @@
 """Determine the Kullback Leibler divergence."""
 from math import log
-
+from typing import Dict
 from .distances_utils import sort
 
 
-def kullback_leibler(a: dict, b: dict) -> float:
+def kullback_leibler(a: Dict, b: Dict) -> float:
     """Determine the Kullback Leibler divergence."""
     total = 0
     big, small = sort(a, b)
