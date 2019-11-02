@@ -2,12 +2,13 @@ dist: trusty
 sudo: false
 env:
   global:
-    - CC_TEST_REPORTER_ID=15e0fe9b49348551008db1516b9cf6289846dc93063dee1f49aa28f679b602ae
+  - secure: Czquf7gPnfetq5W4XX1lSftNJnf1/KkaWsHA05jKl0s+7SJkR+j4atxt/T5X/9euN3ZROeRcwuwll1eEuTsEjwU5ZxX9iACq51KbdQkZ0DQaLmUmYIOR/EUJ/WBvQdZaMOWPtQ6HKB6hi8GdGem/ZE9eafY0YI2oS4uiaiJ+lhramVN5TKvgkP2lWwFtl1YoYjuzS+v1aWQ8oJnMI0pK28oHzyIK7H+lSaCvUExobQA78oO6NpdWwVv3wXvVHM8s2qvRHFBNE5pAKvVs4IY2qghz5B8+w3ltgWEup+5+By0+EYrM5wHIwUCPzi6AXmx6ZJGuBhq3VPtjm+F52gTF0MMTScKh7jsV9vmsZWN+iH5YRv645K3RSos2B4Qynvkh08Om+mCbKzlztNAN3ru3GxdwaejSnm5b4hR5iVuMY1B7v0lsGNuTFK8fDhpmRL9EWn5ht82xOWGlu/2Ks73OJ2ECMr/D5ehF5NQK8kx1ileDt0AiHAvYB8dGui6eKsFRCTzOxVDE+qszotTsTb2TkYNLp/vXzgMD5U2OHI94R9BWpMOdGZPc9SFHpnw2N5eyPccpeG00/rhWfkcWhJUTm1+r0IRLtHZdimR3YpIwWBsalr3iprRQfCMZVZhMiu9YGcHYbbqkbr5zOIhg33I2pnonlh0kvGTew31OukHEFQw=
+  - secure: lEFEBbhlG7ny7EIS+n6utAvhboSceL6EJX6Hrkt2TwT5gQpyk2NGu/gadlMyyJAz2cKQYspo5QnEuVuow7+ANhQwJ5FP6oNLHzIJv34KnZj3Vv5qodauX3NDVdOhoZQrf9UKWIjMtaY9pNHroXHoJKNhpXj0lSGtXkbGRLH3c0Z1QMrXM+PqajnwKGYPCXEZFvAs9EwFfjwNcZeDUNx6iOgt8xVL/cx5Xb+pqLHu+992NYYZtfdi33jQBGZo9TRe7JM4s8RzImiJgQNiM+fRRVGesMRZ0Qm0PlAtwjX2aWcRVsgXsWZZEZqrXH4kMKshAB6PlTinzeCZToM0EvyXPRzxzUdCVc+TMC6pURyuA238m6ZFMHl9RttF4W4UsPY8NB49a1tlWRaJ1cX3JiqXMwb1WgWIbGv+i24RK5jtsRDHA1RikWMpfooSsxLrAB4vo1rVNlb23mcbpZY/XBdpPGslABOWh7krRo3/sk3UoZpJ+yxdMNcSnLbB2pWYj9c62HvcAlIwlS4zSPKfhtvmUPhCTWQeVVXR5o730Q4C5HAHvhW1JlMQIY70WFQu3UGbBthWnloaZmy/P0iWqZyfM1iHnAdHuCG9naT6Ou6JNHADnKpC3IN54QHzs9XWKg56sFFzYddLi+LHtaqoy/c8ADLmYW4HPZ+8rWzGejZjWKs=
 addons:
   sonarcloud:
-    organization: "lucacappelletti94-github"
+    organization: lucacappelletti94-github
     token:
-      secure: "kwDUEBQ+tQWKp0Pd1WYWNNf5zYqhcrFcE2olJEW0mUyPZtwOUJ6oL2e2vLC6JywoPfA8dNV63yf58hGGKkQqdKW318b6/+Cw0I012CGA148Ckcf8GPF10ON+6iXOEZs5yKUiTgZOF4eBcQV5Rn4VHof3Y61VFy3+UtHZCTAlHLnXdS+RQHzrmPfKfgu18KwuBCVERex5oCj00uze1gwz1DIJk6majFzjwzaIvTlsTm7XGxPUPkPn8wjABUw495xNFyaV3rVgl74ad5bT7fOi1reyKPhaU+X5ihuq78ZMnVYsT5Fl/0Ppr7LZo1jXv+cKWA3HyxamaTPZff/hXRHyf4pMlSWQyWee+TBhXxaxSS71/6vQEw8gEsisrJUWKf6tV5u6c3D059v2ASmT4Cm9P8yhxmMuu72zIUqKgOG8UGrlsbHFNZIZ+jABfCzt/CTa9fGP5lyFd1/NZ+rlarN6X7iU+8KilLcqdQYsE0806+9PdoKwLNHvHmxfy/JvEHMpTbH+4TIWPWJTspFlhrxYSjncYvBSSiXGXXp2wnjTgM/PIiYyLizjLGvhHIicUt714+nqjVguXZp8J4NX6M8Q9CI4UrEtUUID+X9C5pfHr/hIqN5jbe0/YuaVp6Cz/N3HDiEtk+xKoKZ32HPyfHOmV6UitIsBafgHQBo6DvlUNB8="
+      secure: kwDUEBQ+tQWKp0Pd1WYWNNf5zYqhcrFcE2olJEW0mUyPZtwOUJ6oL2e2vLC6JywoPfA8dNV63yf58hGGKkQqdKW318b6/+Cw0I012CGA148Ckcf8GPF10ON+6iXOEZs5yKUiTgZOF4eBcQV5Rn4VHof3Y61VFy3+UtHZCTAlHLnXdS+RQHzrmPfKfgu18KwuBCVERex5oCj00uze1gwz1DIJk6majFzjwzaIvTlsTm7XGxPUPkPn8wjABUw495xNFyaV3rVgl74ad5bT7fOi1reyKPhaU+X5ihuq78ZMnVYsT5Fl/0Ppr7LZo1jXv+cKWA3HyxamaTPZff/hXRHyf4pMlSWQyWee+TBhXxaxSS71/6vQEw8gEsisrJUWKf6tV5u6c3D059v2ASmT4Cm9P8yhxmMuu72zIUqKgOG8UGrlsbHFNZIZ+jABfCzt/CTa9fGP5lyFd1/NZ+rlarN6X7iU+8KilLcqdQYsE0806+9PdoKwLNHvHmxfy/JvEHMpTbH+4TIWPWJTspFlhrxYSjncYvBSSiXGXXp2wnjTgM/PIiYyLizjLGvhHIicUt714+nqjVguXZp8J4NX6M8Q9CI4UrEtUUID+X9C5pfHr/hIqN5jbe0/YuaVp6Cz/N3HDiEtk+xKoKZ32HPyfHOmV6UitIsBafgHQBo6DvlUNB8=
 language: python
 python:
 - '3.6'
@@ -16,21 +17,19 @@ jdk:
 cache:
   directories:
   - "$HOME/.sonar/cache"
+before_install:
+- pip install pytest --upgrade
 install:
-- pip install -r test_requirements.txt
-- pip install .
+- pip install .[test]
 before_script:
-  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
-  - chmod +x ./cc-test-reporter
-  - ./cc-test-reporter before-build
+- curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64
+  > ./cc-test-reporter
+- chmod +x ./cc-test-reporter
+- "./cc-test-reporter before-build"
 after_script:
-  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
+- "./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT"
 script:
 - pytest --cov=./dictances --cov-report xml:coverage.xml
-- sonar-scanner
+- if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then sonar-scanner; fi
 after_success:
 - coveralls
-
-notifications:
-  webhooks: https://fathomless-fjord-24024.herokuapp.com/notify
-  email: false
