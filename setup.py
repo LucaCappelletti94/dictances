@@ -37,6 +37,7 @@ test_deps =[
     "sklearn",
     "tqdm",
     "random_dict",
+    "deflate_dict",
     "validate_version_code",
     "codacy-coverage"
 ]
