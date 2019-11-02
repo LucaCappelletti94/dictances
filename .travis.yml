@@ -17,6 +17,8 @@ jdk:
 cache:
   directories:
   - "$HOME/.sonar/cache"
+before_install:
+- pip install pytest --upgrade
 install:
 - pip install .[test]
 before_script:
