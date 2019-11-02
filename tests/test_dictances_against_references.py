@@ -10,7 +10,7 @@ import pytest
 candidates = {
     canberra: distance.canberra,
     chebyshev: distance.chebyshev,
-	chi_square: chisquare
+    chi_square: chisquare,
     cityblock: distance.cityblock,
     manhattan: distance.cityblock,
     total_variation: distance.cityblock,
