@@ -1,16 +1,33 @@
-"""Return the nth power distance beetween a and b."""
+"""Return the nth power distance beetween the given dictionaries."""
 from typing import Dict
 
-def _even_nth(a_val: float, b_val: float)->float:
+
+def _even_nth(a_val: float, b_val: float) -> float:
     return a_val - b_val
 
 
-def _odd_nth(a_val: float, b_val: float)->float:
+def _odd_nth(a_val: float, b_val: float) -> float:
     return abs(a_val - b_val)
 
 
-def nth_variation(a: Dict, b: Dict, exp: float=2, overlap: bool=False)->float:
-    """Return the nth power distance beetween a and b."""
+def nth_variation(a: Dict, b: Dict, exp: float = 2, overlap: bool = False) -> float:
+    """Return the nth power distance beetween the given dictionaries.
+
+    Parameters
+    ----------------------------
+    a: Dict,
+        First dictionary to consider.
+    b: Dict,
+        Second dictionary to consider.
+    exp: float,
+        The exponent for the nth power distance.
+    overlap: bool,
+        Whetever to return or not the overlap number.
+
+    Returns
+    ----------------------------
+    Return the nth power distance distance beetween the given dictionaries.
+    """
     total = 0
     n = 0
     bget = b.__getitem__

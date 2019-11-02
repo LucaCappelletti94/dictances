@@ -34,6 +34,7 @@ test_deps =[
     "coveralls",
     "numpy",
     "scipy",
+    "sklearn",
     "tqdm",
     "random_dict",
     "validate_version_code",

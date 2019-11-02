@@ -14,7 +14,6 @@ def intersection_nth_variation(a: Dict, b: Dict, exp: float=2, overlap: bool=Fal
     total = 0
     n = 0
     bget = b.__getitem__
-    aget = a.__getitem__
 
     if exp % 2 == 0:
         nth = _even_nth

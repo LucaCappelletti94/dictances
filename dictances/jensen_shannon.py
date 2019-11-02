@@ -1,11 +1,11 @@
-"""Return the jensen shannon divergence beetween a and b."""
+"""Return the Jensen Shannon Divergence beetween a and b."""
 from math import log
 from typing import Dict
 from .distances_utils import sort
 
 
 def jensen_shannon(a: Dict, b: Dict)->float:
-    """Return the jensen shannon divergence beetween a and b."""
+    """Return the Jensen Shannon Divergence beetween a and b."""
     total = 0
     delta = 0
     big, small = sort(a, b)
