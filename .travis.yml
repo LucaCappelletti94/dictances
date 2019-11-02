@@ -27,10 +27,6 @@ after_script:
   - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
 script:
 - pytest --cov=./dictances --cov-report xml:coverage.xml
-- sonar-scanner
+- if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then sonar-scanner; fi
 after_success:
 - coveralls
-
-notifications:
-  webhooks: https://fathomless-fjord-24024.herokuapp.com/notify
-  email: false
