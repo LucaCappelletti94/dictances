@@ -12,7 +12,7 @@
 develop-eggs/
 *.cover
 # Installer logs
-.coverage.*
+.coverage*
 \.pytest_cache/
 __pycache__/
 # Scrapy stuff:
