@@ -2,7 +2,7 @@ from dictances import canberra, chebyshev, chi_square, cityblock, cosine, manhat
 from dictances import hamming, intersection_nth_variation, intersection_squared_hellinger, intersection_squared_variation, intersection_total_variation, normal_total_variation, pearson
 from scipy.spatial import distance
 from sklearn.metrics import mean_squared_error, mean_absolute_error
-from scipy.stats import chisquare
+from scipy.stats import chisquare, entropy
 from .utils import compare_metrics, bhattacharyya_distance, jensen_shannon_divergence
 from tqdm.auto import tqdm
 import pytest
