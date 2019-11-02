@@ -11,7 +11,7 @@ def align_dictionaries(a: Dict, b: Dict) -> Dict:
         The dictionary to be aligned to the second one, adding missing keys to values 0 as required.
     b: Dict,
         The dictionary to align to.
-    
+
     Returns
     ----------------------------------
     Aligned dictionary a.

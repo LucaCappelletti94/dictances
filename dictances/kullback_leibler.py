@@ -28,7 +28,7 @@ def kullback_leibler(a: Dict, b: Dict) -> float:
             overlap += 1
         except KeyError:
             pass
-    
+
     if overlap == 0 and (len(a) != 0 or len(b) != 0):
         return inf
     return total
