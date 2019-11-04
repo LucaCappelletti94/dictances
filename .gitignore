@@ -74,7 +74,6 @@ eggs/
 sdist/
 pip-delete-this-directory.txt
 # Sphinx documentation
-dist/
 *.manifest
 wheels/
 env/
