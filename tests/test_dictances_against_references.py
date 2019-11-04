@@ -26,7 +26,6 @@ candidates = {
     intersection_squared_hellinger: None,
     intersection_squared_variation: None,
     intersection_total_variation: None,
-    normal_total_variation: None,
     pearson: None
 }
 

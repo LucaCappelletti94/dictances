@@ -14,7 +14,6 @@ from .kullback_leibler import kullback_leibler
 from .mae import mae
 from .minkowsky import minkowsky
 from .mse import mse
-from .normal_total_variation import normal_total_variation
 from .nth_variation import nth_variation
 from .pearson import pearson
 from .squared_variation import squared_variation
@@ -25,6 +24,6 @@ manhattan = cityblock = total_variation
 __all__ = ['bhattacharyya', 'bhattacharyya_coefficient', 'canberra',
            'chebyshev', 'cosine', 'euclidean',
            'hamming', 'jensen_shannon', 'kullback_leibler',
-           'mae', 'manhattan', 'cityblock', 'minkowsky', 'mse', 'normal_total_variation',
+           'mae', 'manhattan', 'cityblock', 'minkowsky', 'mse',
            'nth_variation', 'pearson', 'squared_variation', 'total_variation', 'intersection_squared_variation',
            'intersection_squared_hellinger', 'intersection_nth_variation']
