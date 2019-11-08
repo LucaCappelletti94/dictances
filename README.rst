@@ -23,28 +23,44 @@ Available metrics
 -----------------------------------------------
 A number of distances and divergences are available:
 
-- bhattacharyya
-- bhattacharyya_coefficient
-- canberra
-- chebyshev
-- chi_square
-- cosine
-- euclidean
-- hamming
-- jensen_shannon
-- kullback_leibler
-- mae
-- manhattan, cityblock, total_variation
-- minkowsky
-- mse
-- normal_chi_square
-- normal_total_variation
-- nth_variation
-- pearson
-- squared_variation
-- intersection_squared_variation
-- intersection_squared_hellinger
-- intersection_nth_variation
+.. role:: python(code)
+   :language: python
+
++----------------------------------------------------------------------------------------------------------------+-------------------------------------------------+
+| Distances                                                                                                      | Methods                                         |
++================================================================================================================+=================================================+
+| `Bhattacharyya distance <https://en.wikipedia.org/wiki/Bhattacharyya_distance>`__                              | :python:`bhattacharyya`                         |
++----------------------------------------------------------------------------------------------------------------+-------------------------------------------------+
+| `Bhattacharyya coefficient <https://en.wikipedia.org/wiki/Bhattacharyya_distance#Bhattacharyya_coefficient>`__ | :python:`bhattacharyya_coefficient`             |
++----------------------------------------------------------------------------------------------------------------+-------------------------------------------------+
+| `Canberra distance <https://en.wikipedia.org/wiki/Canberra_distance>`__                                        | :python:`canberra`                              |
++----------------------------------------------------------------------------------------------------------------+-------------------------------------------------+
+| `Chebyshev distance <https://en.wikipedia.org/wiki/Chebyshev_distance>`__                                      | :python:`chebyshev`                             |
++----------------------------------------------------------------------------------------------------------------+-------------------------------------------------+
+| `Chi Square distance <https://en.wikipedia.org/wiki/Chi-squared_test>`__                                       | :python:`chi_square`                             |
++----------------------------------------------------------------------------------------------------------------+-------------------------------------------------+
+| `Cosine Distance <https://en.wikipedia.org/wiki/Cosine_similarity>`__                                          | :python:`cosine`                                |
++----------------------------------------------------------------------------------------------------------------+-------------------------------------------------+
+| `Euclidean distance <https://en.wikipedia.org/wiki/Euclidean_distance>`__                                      | :python:`euclidean`                             |
++----------------------------------------------------------------------------------------------------------------+-------------------------------------------------+
+| `Hamming distance <https://en.wikipedia.org/wiki/Hamming_distance>`__                                          | :python:`hamming`                               |
++----------------------------------------------------------------------------------------------------------------+-------------------------------------------------+
+| `Jensen-Shannon divergence <https://en.wikipedia.org/wiki/Jensen%E2%80%93Shannon_divergence>`__                | :python:`jensen_shannon`                        |
++----------------------------------------------------------------------------------------------------------------+-------------------------------------------------+
+| `Kullback-Leibler divergence <https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence>`__            | :python:`kullback_leibler`                      |
++----------------------------------------------------------------------------------------------------------------+-------------------------------------------------+
+| `Mean absolute error <https://en.wikipedia.org/wiki/Mean_absolute_error>`__                                    | :python:`mae`                                   |
++----------------------------------------------------------------------------------------------------------------+-------------------------------------------------+
+| `Taxicab geometry <https://en.wikipedia.org/wiki/Taxicab_geometry>`__                                          | :python:`manhattan, cityblock, total_variation` |
++----------------------------------------------------------------------------------------------------------------+-------------------------------------------------+
+| `Minkowski distance <https://en.wikipedia.org/wiki/Minkowski_distance>`__                                      | :python:`minkowsky`                             |
++----------------------------------------------------------------------------------------------------------------+-------------------------------------------------+
+| `Mean squared error <https://en.wikipedia.org/wiki/Mean_squared_error>`__                                      | :python:`mse`                                   |
++----------------------------------------------------------------------------------------------------------------+-------------------------------------------------+
+| `Pearson's distance <https://en.wikipedia.org/wiki/Pearson_correlation_coefficient#Pearson's_distance>`__      | :python:`pearson`                               |
++----------------------------------------------------------------------------------------------------------------+-------------------------------------------------+
+| `Squared deviations from the mean <https://en.wikipedia.org/wiki/Squared_deviations_from_the_mean>`__          | :python:`squared_variation`                     |
++----------------------------------------------------------------------------------------------------------------+-------------------------------------------------+
 
 Usage example
 --------------------
