@@ -3,14 +3,14 @@ from dictances import hamming, intersection_nth_variation, intersection_squared_
 from scipy.spatial import distance
 from sklearn.metrics import mean_squared_error, mean_absolute_error
 from scipy.stats import chisquare, entropy
-from .utils import compare_metrics, bhattacharyya_distance, jensen_shannon_divergence
+from .utils import compare_metrics, bhattacharyya_distance, chi_square_distance, jensen_shannon_divergence
 from tqdm.auto import tqdm
 import pytest
 
 candidates = {
     canberra: distance.canberra,
     chebyshev: distance.chebyshev,
-    chi_square: chisquare,
+    chi_square: chi_square_distance,
     cityblock: distance.cityblock,
     manhattan: distance.cityblock,
     total_variation: distance.cityblock,
