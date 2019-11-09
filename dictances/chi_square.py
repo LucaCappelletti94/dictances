@@ -1,6 +1,7 @@
 """Return the chi square distance beetween a and b."""
+from typing import Dict
 
-def chi_square(a: dict, b: dict)->float:
+def chi_square(a: Dict, b: Dict)->float:
     """Return the chi square distance beetween a and b."""
 
     total = 0

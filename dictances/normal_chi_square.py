@@ -1,6 +1,7 @@
 """Return the normalized chi square distance beetween a and b."""
+from typing import Dict
 
-def normal_chi_square(a: dict, b: dict)->float:
+def normal_chi_square(a: Dict, b: Dict)->float:
     """Return the normalized chi square distance beetween a and b."""
 
     a_factor = 1.0/sum(a.values())
