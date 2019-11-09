@@ -6,7 +6,7 @@ def chi_square_distance(repr1: np.ndarray, repr2: np.ndarray) -> float:
     repr2.tolist()
     sum = 0
 
-    for x in range(max(repr1, repr2)):
+    for x in range(max(len(repr1), len(repr2))):
         val1 = 0
         val2 = 0
 
