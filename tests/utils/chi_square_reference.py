@@ -4,7 +4,7 @@ from scipy.stats import chisquare
 def chi_square_distance(repr1: np.ndarray, repr2: np.ndarray) -> float:
     repr1.tolist()
     repr2.tolist()
-    sum = 0
+    dist_sum = 0
 
     for x in range(max(len(repr1), len(repr2))):
         val1 = 0
@@ -20,5 +20,5 @@ def chi_square_distance(repr1: np.ndarray, repr2: np.ndarray) -> float:
         except IndexError:
             pass
 
-        sum += chisquare([val1,val2])[0]
-    return sum
+        dist_sum += chisquare([val1,val2])[0]
+    return dist_sum
