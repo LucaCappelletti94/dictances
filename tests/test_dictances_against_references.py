@@ -1,5 +1,6 @@
-from dictances import canberra, chebyshev, chi_square, cityblock, cosine, manhattan, total_variation, euclidean, minkowsky, mse, mae, bhattacharyya, kullback_leibler, jensen_shannon
-from dictances import hamming, intersection_nth_variation, intersection_squared_hellinger, intersection_squared_variation, intersection_total_variation, pearson, normal_chi_square
+from dictances import canberra, chebyshev, chi_square, cityblock, cosine, manhattan, total_variation, euclidean, minkowsky, mse, mae, bhattacharyya
+from dictances import kullback_leibler, jensen_shannon, hamming, intersection_nth_variation, intersection_squared_hellinger, intersection_squared_variation
+from dictances import intersection_total_variation, pearson, normal_chi_square
 from scipy.spatial import distance
 from sklearn.metrics import mean_squared_error, mean_absolute_error
 from scipy.stats import entropy
