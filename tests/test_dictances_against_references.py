@@ -1,9 +1,9 @@
 from dictances import canberra, chebyshev, chi_square, cityblock, cosine, manhattan, total_variation, euclidean, minkowsky, mse, mae, bhattacharyya, kullback_leibler, jensen_shannon
-from dictances import hamming, intersection_nth_variation, intersection_squared_hellinger, intersection_squared_variation, intersection_total_variation, normal_chi_square_reference, pearson
+from dictances import hamming, intersection_nth_variation, intersection_squared_hellinger, intersection_squared_variation, intersection_total_variation, pearson, normal_chi_square
 from scipy.spatial import distance
 from sklearn.metrics import mean_squared_error, mean_absolute_error
 from scipy.stats import entropy
-from .utils import compare_metrics, bhattacharyya_distance, chi_square_distance, jensen_shannon_divergence
+from .utils import compare_metrics, bhattacharyya_distance, chi_square_distance, jensen_shannon_divergence, normal_chi_square_distance
 from tqdm.auto import tqdm
 import pytest
 
