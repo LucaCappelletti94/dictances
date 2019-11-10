@@ -22,7 +22,7 @@ candidates = {
     mse: mean_squared_error,
     mae: mean_absolute_error,
     normal_chi_square: normal_chi_square_distance,
-    b-hattacharyya: bhattacharyya_distance,
+    bhattacharyya: bhattacharyya_distance,
     kullback_leibler: entropy,
     hamming: None,
     intersection_nth_variation: None,
