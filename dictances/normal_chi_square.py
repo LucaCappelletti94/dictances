@@ -1,8 +1,21 @@
-"""Return the normalized chi square distance beetween a and b."""
+"""Return the normalized chi square distance beetween the two given dictionaries."""
 from typing import Dict
 
-def normal_chi_square(a: Dict, b: Dict)->float:
-    """Return the normalized chi square distance beetween a and b."""
+
+def normal_chi_square(a: Dict, b: Dict) -> float:
+    """Return the normalized chi square distance beetween the two given dictionaries.
+
+    Parameters
+    ----------------------------
+    a: Dict,
+        First dictionary to consider.
+    b: Dict,
+        Second dictionary to consider.
+
+    Returns
+    ----------------------------
+    Return the normalized chi square distance beetween the two given dictionaries.
+    """
 
     a_factor = 1.0/sum(a.values())
     b_factor = 1.0/sum(b.values())
@@ -16,9 +29,7 @@ def normal_chi_square(a: Dict, b: Dict)->float:
             total += aval
 
     for k in b:
-        try:
-            a[k]
-        except KeyError:
+        if k not in a:
             total += b[k]*b_factor
 
     return total
