@@ -4,14 +4,14 @@ from typing import Dict
 from .distances_utils import sort
 
 
-def kullback_leibler(a: Dict, b: Dict) -> float:
+def kullback_leibler(p: Dict, q: Dict) -> float:
     """Determine the Kullback Leibler divergence beetween the given dictionaries.
 
     Parameters
     ----------------------------
-    a: Dict,
+    p: Dict,
         First dictionary to consider.
-    b: Dict,
+    q: Dict,
         Second dictionary to consider.
 
     Returns
@@ -20,15 +20,14 @@ def kullback_leibler(a: Dict, b: Dict) -> float:
     """
     total = 0
     overlap = 0
-    big, small = sort(a, b)
-    big_get = big.__getitem__
-    for key, small_value in small.items():
+    _, small = sort(p, q)
+    for key in small:
         try:
-            total += small_value * log(small_value / big_get(key))
+            total += p[key] * log(q[key] / p[key])
             overlap += 1
         except KeyError:
             pass
 
-    if overlap == 0 and (len(a) != 0 or len(b) != 0):
+    if overlap == 0 and (len(p) != 0 or len(q) != 0):
         return inf
     return total
