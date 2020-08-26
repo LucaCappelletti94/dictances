@@ -23,7 +23,7 @@ def kullback_leibler(p: Dict, q: Dict) -> float:
     _, small = sort(p, q)
     for key in small:
         try:
-            total += p[key] * log(q[key] / p[key])
+            total += p[key] * log(p[key] / q[key])
             overlap += 1
         except KeyError:
             pass
