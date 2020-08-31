@@ -1,2 +1,2 @@
-"""Current version of package dictances"""
-__version__ = "1.5.2"
+"""Current version of package dictances."""
+__version__ = "1.5.3"
