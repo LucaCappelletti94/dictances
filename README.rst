@@ -2,7 +2,11 @@ dictances
 =========================================================================================
 |travis| |sonar_quality| |sonar_maintainability| |codacy| |code_climate_maintainability| |pip| |downloads|
 
-Distances and divergences between distributions implemented in python.
+Distances and divergences between discrete distributions described as dictionaries implemented in python.
+
+These are meant as fast solutions to compute distances and divergences between discrete distributions,
+expecially when the two distributions contains a significant amount of events with nill probability
+which are not described in the dictionaries.
 
 How do I install this package?
 ----------------------------------------------
@@ -62,14 +66,55 @@ A number of distances and divergences are available:
 | `Squared deviations from the mean <https://en.wikipedia.org/wiki/Squared_deviations_from_the_mean>`__          | :python:`squared_variation`                     |
 +----------------------------------------------------------------------------------------------------------------+-------------------------------------------------+
 
-Usage example
---------------------
+Usage example with points
+--------------------------------------
+Suppose you have a point described by `my_first_dictionary` and another one described by `my_second_dictionary`:
 
 .. code:: python
 
     from dictances import cosine
+    
+    my_first_dictionary = {
+        "a": 56,
+        "b": 34,
+        "c": 89
+    }
+    
+    my_second_dictionary = {
+        "a": 21,
+        "d": 51,
+        "e": 74
+    }
 
     cosine(my_first_dictionary, my_second_dictionary)
+    #>>> 0.8847005261889619
+
+
+Usage example with distributions
+-----------------------------------------
+Suppose you have a point described by `my_first_dictionary` and another one described by `my_second_dictionary`:
+
+.. code:: python
+    
+    from dictances import bhattacharyya, bhattacharyya_coefficient
+
+    a = {
+        "event_1": 0.4,
+        "event_2": 0.1,
+        "event_3": 0.2,
+        "event_4": 0.3,
+    }
+    b = {
+        "event_1": 0.1,
+        "event_2": 0.2,
+        "event_5": 0.2,
+        "event_9": 0.5,
+    }
+    
+    bhattacharyya_coefficient(a, b)
+    #>>> 0.3414213562373095
+    bhattacharyya(a, b)
+    #>>> 1.07463791569453
 
 
 Handling nested dictionaries
