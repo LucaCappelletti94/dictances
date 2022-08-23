@@ -86,3 +86,4 @@ coverage.xml
 # mkdocs documentation
 .venv
 .installed.cfg
+.vscode

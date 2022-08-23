@@ -1,4 +1,5 @@
 """Import all the functions offered by package dictances."""
+from support_developer import support_luca
 from .bhattacharyya import bhattacharyya, bhattacharyya_coefficient
 from .canberra import canberra
 from .chebyshev import chebyshev
@@ -22,6 +23,8 @@ from .squared_variation import squared_variation
 from .total_variation import total_variation
 
 manhattan = cityblock = total_variation
+
+support_luca()
 
 __all__ = ['bhattacharyya', 'bhattacharyya_coefficient', 'canberra',
            'chebyshev', 'chi_square', 'cosine', 'euclidean',
