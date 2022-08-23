@@ -24,7 +24,7 @@ from .total_variation import total_variation
 
 manhattan = cityblock = total_variation
 
-support_luca()
+support_luca("dictances")
 
 __all__ = ['bhattacharyya', 'bhattacharyya_coefficient', 'canberra',
            'chebyshev', 'chi_square', 'cosine', 'euclidean',
