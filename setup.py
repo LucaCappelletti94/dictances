@@ -67,7 +67,7 @@ setup(
     tests_require=test_deps,
     # Add here the package dependencies
     install_requires=[
-        "support_luca"
+        "support_developer"
     ],
     extras_require=extras,
 )
