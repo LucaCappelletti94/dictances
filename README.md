@@ -6,7 +6,6 @@
 [![python versions](https://img.shields.io/pypi/pyversions/dictances)](https://www.python.org/downloads/)
 [![GitHub actions](https://github.com/LucaCappelletti94/dictances/actions/workflows/python.yml/badge.svg)](https://github.com/LucaCappelletti94/dictances/actions/)
 
-
 Distances and divergences between discrete distributions described as dictionaries implemented in Python.
 
 These are meant as fast solutions to compute distances and divergences between discrete distributions, especially when the two distributions contain a significant amount of events with nil probability which are not described in the dictionaries.
@@ -23,24 +22,24 @@ pip install dictances
 
 A number of distances and divergences are available:
 
-| Distances                                                                                                      | Methods                                         |
-|---------------------------------------------------------------------------------------------------------------|-------------------------------------------------|
-| [Bhattacharyya distance](https://en.wikipedia.org/wiki/Bhattacharyya_distance)                                 | `bhattacharyya`                                 |
-| [Bhattacharyya coefficient](https://en.wikipedia.org/wiki/Bhattacharyya_distance#Bhattacharyya_coefficient)    | `bhattacharyya_coefficient`                     |
-| [Canberra distance](https://en.wikipedia.org/wiki/Canberra_distance)                                           | `canberra`                                      |
-| [Chebyshev distance](https://en.wikipedia.org/wiki/Chebyshev_distance)                                         | `chebyshev`                                     |
-| [Chi Square distance](https://en.wikipedia.org/wiki/Chi-squared_test)                                          | `chi_square`                                    |
-| [Cosine Distance](https://en.wikipedia.org/wiki/Cosine_similarity)                                             | `cosine`                                        |
-| [Euclidean distance](https://en.wikipedia.org/wiki/Euclidean_distance)                                         | `euclidean`                                     |
-| [Hamming distance](https://en.wikipedia.org/wiki/Hamming_distance)                                             | `hamming`                                       |
-| [Jensen-Shannon divergence](https://en.wikipedia.org/wiki/Jensen%E2%80%93Shannon_divergence)                   | `jensen_shannon`                                |
-| [Kullback-Leibler divergence](https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence)               | `kullback_leibler`                              |
-| [Mean absolute error](https://en.wikipedia.org/wiki/Mean_absolute_error)                                       | `mae`                                           |
-| [Taxicab geometry](https://en.wikipedia.org/wiki/Taxicab_geometry)                                             | `manhattan`, `cityblock`, `total_variation`     |
-| [Minkowski distance](https://en.wikipedia.org/wiki/Minkowski_distance)                                         | `minkowsky`                                     |
-| [Mean squared error](https://en.wikipedia.org/wiki/Mean_squared_error)                                         | `mse`                                           |
-| [Pearson's distance](https://en.wikipedia.org/wiki/Pearson_correlation_coefficient#Pearson's_distance)         | `pearson`                                       |
-| [Squared deviations from the mean](https://en.wikipedia.org/wiki/Squared_deviations_from_the_mean)             | `squared_variation`                             |
+| Distances                                                                                                   | Methods                                     |
+| ----------------------------------------------------------------------------------------------------------- | ------------------------------------------- |
+| [Bhattacharyya distance](https://en.wikipedia.org/wiki/Bhattacharyya_distance)                              | `bhattacharyya`                             |
+| [Bhattacharyya coefficient](https://en.wikipedia.org/wiki/Bhattacharyya_distance#Bhattacharyya_coefficient) | `bhattacharyya_coefficient`                 |
+| [Canberra distance](https://en.wikipedia.org/wiki/Canberra_distance)                                        | `canberra`                                  |
+| [Chebyshev distance](https://en.wikipedia.org/wiki/Chebyshev_distance)                                      | `chebyshev`                                 |
+| [Chi Square distance](https://en.wikipedia.org/wiki/Chi-squared_test)                                       | `chi_square`                                |
+| [Cosine Distance](https://en.wikipedia.org/wiki/Cosine_similarity)                                          | `cosine`                                    |
+| [Euclidean distance](https://en.wikipedia.org/wiki/Euclidean_distance)                                      | `euclidean`                                 |
+| [Hamming distance](https://en.wikipedia.org/wiki/Hamming_distance)                                          | `hamming`                                   |
+| [Jensen-Shannon divergence](https://en.wikipedia.org/wiki/Jensen%E2%80%93Shannon_divergence)                | `jensen_shannon`                            |
+| [Kullback-Leibler divergence](https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence)            | `kullback_leibler`                          |
+| [Mean absolute error](https://en.wikipedia.org/wiki/Mean_absolute_error)                                    | `mae`                                       |
+| [Taxicab geometry](https://en.wikipedia.org/wiki/Taxicab_geometry)                                          | `manhattan`, `cityblock`, `total_variation` |
+| [Minkowski distance](https://en.wikipedia.org/wiki/Minkowski_distance)                                      | `minkowsky`                                 |
+| [Mean squared error](https://en.wikipedia.org/wiki/Mean_squared_error)                                      | `mse`                                       |
+| [Pearson's distance](https://en.wikipedia.org/wiki/Pearson_correlation_coefficient#Pearson's_distance)      | `pearson`                                   |
+| [Squared deviations from the mean](https://en.wikipedia.org/wiki/Squared_deviations_from_the_mean)          | `squared_variation`                         |
 
 ## Usage example with points
 
@@ -117,3 +116,9 @@ my_second_dictionary = {
 
 cosine(deflate(my_first_dictionary), deflate(my_second_dictionary))
 ```
+
+## License
+This software is distributed under the MIT License. See the [LICENSE](LICENSE) file for more information.
+
+## How to contribute
+If you want to contribute to the project and make it better, your help is very welcome. If you find a bug, please raise an issue with all the minimal code necessary to reproduce it. If you have a feature request, please open an adequately detailed issue to discuss it before starting to work on it in a pull request.
