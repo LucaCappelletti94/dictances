@@ -10,6 +10,8 @@ Distances and divergences between discrete distributions described as dictionari
 
 These are meant as fast solutions to compute distances and divergences between discrete distributions, especially when the two distributions contain a significant amount of events with nil probability which are not described in the dictionaries.
 
+Find the complete list just below.
+
 ## How do I install this package?
 
 As usual, just download it using pip:
