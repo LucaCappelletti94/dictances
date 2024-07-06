@@ -31,7 +31,7 @@ test_deps = [
     "pytest-cov",
     "numpy",
     "scipy",
-    "sklearn",
+    "scikit-learn",
     "tqdm",
     "random_dict",
     "dict_hash",
