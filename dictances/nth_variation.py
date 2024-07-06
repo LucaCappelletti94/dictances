@@ -1,4 +1,5 @@
 """Return the nth power distance beetween the given dictionaries."""
+
 from typing import Dict
 
 
@@ -40,7 +41,7 @@ def nth_variation(a: Dict, b: Dict, exp: float = 2, overlap: bool = False) -> fl
 
     for k, a_val in a.items():
         try:
-            total += nth(a_val, bget(k))**exp
+            total += nth(a_val, bget(k)) ** exp
         except KeyError:
             total += a_val**exp
         n += 1

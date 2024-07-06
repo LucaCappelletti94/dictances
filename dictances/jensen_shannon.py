@@ -1,10 +1,11 @@
 """Return the Jensen Shannon Divergence beetween the given dictionaries."""
+
 from math import log
 from typing import Dict
-from .distances_utils import sort
+from dictances.distances_utils import sort
 
 
-def jensen_shannon(a: Dict, b: Dict)->float:
+def jensen_shannon(a: Dict, b: Dict) -> float:
     """Return the Jensen Shannon divergence beetween the given dictionaries.
 
     Parameters
@@ -29,8 +30,9 @@ def jensen_shannon(a: Dict, b: Dict)->float:
             big_value = big_get(key)
             if big_value:
                 denominator = (big_value + small_value) / 2
-                total += small_value * log(small_value / denominator) + \
-                    big_value * log(big_value / denominator)
+                total += small_value * log(small_value / denominator) + big_value * log(
+                    big_value / denominator
+                )
                 delta += big_value + small_value
         except KeyError:
             pass

@@ -1,4 +1,5 @@
 """Return the chi square distance beetween the two given dictionaries."""
+
 from typing import Dict
 
 

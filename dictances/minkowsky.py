@@ -1,6 +1,7 @@
 """Return the minkowsky distance beetween the given dictionaries."""
-from .nth_variation import nth_variation
+
 from typing import Dict
+from dictances.nth_variation import nth_variation
 
 
 def minkowsky(a: Dict, b: Dict, p: int = 2) -> float:
@@ -26,4 +27,4 @@ def minkowsky(a: Dict, b: Dict, p: int = 2) -> float:
     """
     if p == 0:
         raise ValueError("Parameter p must be non zero.")
-    return nth_variation(a, b, p)**(1 / p)
+    return nth_variation(a, b, p) ** (1 / p)

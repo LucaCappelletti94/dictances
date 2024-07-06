@@ -1,5 +1,7 @@
 """Generic utils used through all the package."""
+
 from typing import Dict
+
 
 def sort(a: Dict, b: Dict):
     """Return the bigger dict, then the smaller one."""

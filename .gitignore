@@ -87,3 +87,4 @@ coverage.xml
 .venv
 .installed.cfg
 .vscode
+tests/references/*

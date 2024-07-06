@@ -1,7 +1,9 @@
 """Return the Hamming distance beetween the given dictionaries."""
+
 from typing import Dict
 
-def hamming(a: Dict, b: Dict)->float:
+
+def hamming(a: Dict, b: Dict) -> float:
     """Return the Hamming distance beetween the given dictionaries.
 
     Parameters

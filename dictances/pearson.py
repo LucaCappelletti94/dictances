@@ -1,8 +1,10 @@
 """Return the nth power distance beetween a and b."""
+
 from math import sqrt
 from typing import Dict
 
-def pearson(a: Dict, b: Dict)->float:
+
+def pearson(a: Dict, b: Dict) -> float:
     """Return the nth power distance beetween a and b."""
     bget = b.get
 
@@ -31,4 +33,6 @@ def pearson(a: Dict, b: Dict)->float:
     a_mean = a_sum / len_a
     b_mean = b_sum / len_b
 
-    return 1 - (ab - n_mul * a_mean * b_mean) / (sqrt(a_sum2 - len_a * a_mean**2) * sqrt(b_sum2 - len_b * b_mean**2))
+    return 1 - (ab - n_mul * a_mean * b_mean) / (
+        sqrt(a_sum2 - len_a * a_mean**2) * sqrt(b_sum2 - len_b * b_mean**2)
+    )

@@ -1,6 +1,7 @@
 """Return the Total Variation distance."""
-from .nth_variation import nth_variation
+
 from typing import Dict
+from dictances.nth_variation import nth_variation
 
 
 def total_variation(a: Dict, b: Dict, overlap: bool = False) -> float:

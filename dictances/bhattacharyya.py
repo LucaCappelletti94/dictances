@@ -1,8 +1,9 @@
 """Determine the bhattacharyya distance beetween the given dictionaries."""
-import numpy as np
+
 from math import sqrt
 from typing import Dict
-from .distances_utils import sort
+import numpy as np
+from dictances.distances_utils import sort
 
 
 def bhattacharyya_coefficient(a: Dict, b: Dict) -> float:

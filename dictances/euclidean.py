@@ -1,9 +1,10 @@
 """Return the euclidean distance beetween the given dictionaries."""
-from .minkowsky import minkowsky
+
 from typing import Dict
+from dictances.minkowsky import minkowsky
 
 
-def euclidean(a: Dict, b: Dict)->float:
+def euclidean(a: Dict, b: Dict) -> float:
     """Return the euclidean distance beetween the given dictionaries.
 
     Parameters

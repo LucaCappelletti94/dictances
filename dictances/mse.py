@@ -1,7 +1,8 @@
 """Return the mean total squared variation."""
-from .distances_utils import mean
-from .squared_variation import squared_variation
+
 from typing import Dict
+from dictances.distances_utils import mean
+from dictances.squared_variation import squared_variation
 
 
 def mse(a: Dict, b: Dict) -> float:

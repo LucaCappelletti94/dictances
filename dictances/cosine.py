@@ -1,8 +1,10 @@
 """Return the cosine distance beetween the given dictionaries."""
+
 from math import sqrt
 from typing import Dict
 
-def cosine(a: Dict, b: Dict)->float:
+
+def cosine(a: Dict, b: Dict) -> float:
     """Return the cosine distance beetween the given dictionaries.
 
     Parameters

@@ -1,7 +1,8 @@
 """Determine the Kullback Leibler divergence beetween the given dictionaries."""
+
 from math import log, inf
 from typing import Dict
-from .distances_utils import sort
+from dictances.distances_utils import sort
 
 
 def kullback_leibler(p: Dict, q: Dict) -> float:
